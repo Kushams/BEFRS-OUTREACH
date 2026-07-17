@@ -16,10 +16,18 @@
 ## Methodology
 - Nationwide coverage via regional research passes (see Region Groups below).
 - Each restaurant must have a publicly verifiable business email found on an
-  official website, official contact/reservations page, or official social
-  media profile. Source URL recorded for every email.
-- No guessed/pattern-generated emails. No third-party-directory-only emails
-  unless the directory is quoting the restaurant's own published address.
+  official website, official contact/reservations page, official social
+  media profile, OR (as of 2026-07-17, user-approved) a corroborated
+  third-party source — e.g. a press release, chamber of commerce listing,
+  franchise/press kit, or news article — as long as the email is clearly
+  tied to that specific restaurant (matches its domain/name, not a generic
+  aggregator placeholder). This was loosened from "official site only" to
+  increase throughput, since most independent restaurants only publish a
+  phone number or contact form and don't have a fetchable email on their
+  own site. Source URL recorded for every email regardless of source type.
+- Still never guess/pattern-generate an email (e.g. assuming info@domain.com
+  without seeing it anywhere). Still drop anything that can't be tied to a
+  specific, currently-operating restaurant.
 - Dedup key: restaurant name + city/state, AND email address (both must be
   unique across the whole database).
 
