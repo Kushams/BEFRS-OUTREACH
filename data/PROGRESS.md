@@ -2,16 +2,10 @@
 
 ## Status
 - Project started: 2026-07-15
-- Current batch in progress: 001 (partial checkpoint saved, still filling toward 500)
-- Total verified restaurants collected so far: 86
+- **Batch 001: COMPLETE — 508 verified restaurants, all 50 states + DC represented.**
+- Total verified restaurants collected so far: 508
 - Target milestone: 1,500 (no upper limit; continue until sources exhausted)
-- Note: Region pass 1 was interrupted by a WebSearch/WebFetch tool session-usage
-  limit (message: "You've hit your session limit, resets 1:30am UTC"). 6 of 10
-  region agents completed fully; 4 (Mid-Atlantic, Midwest East, Southwest, West
-  Coast) were cut off with zero verified results and must be re-run from scratch
-  on resume. Direct curl fetches to specific known URLs still work; general web
-  search via curl (DuckDuckGo) is blocked by a bot challenge, so real search
-  requires the WebSearch tool to be available again.
+- Batch 002 not yet started.
 
 ## Methodology
 - Nationwide coverage via regional research passes (see Region Groups below).
@@ -58,17 +52,26 @@
 | 10. West Coast | not started (0) | Agent failed immediately on tool-limit, no results returned. |
 
 ## Batch Files
-- restaurant_leads_batch_001.csv — 86 restaurants saved (checkpoint, need ~414 more to complete batch 001)
+- restaurant_leads_batch_001.csv — COMPLETE, 508 restaurants, all 50 states + DC.
 
-## Next Steps On Resume
-1. Re-run region agents for: Mid-Atlantic (NY/NJ/PA/DE/MD/DC), Midwest East (OH/MI/IN/IL/WI),
-   Southwest (TX/OK/NM/AZ), West Coast (CA/OR/WA/AK/HI) — these have zero verified restaurants.
-2. Run a "gap-fill" pass for the partially-covered regions listed above, targeting the
-   specific cities/states noted as thin or missing.
-3. Continue until batch 001 reaches ~500, then start batch 002 with a fresh set of
-   cities/towns not yet covered (use this file's Coverage Log + the batch CSV's own
-   restaurant list as the exclusion list — never re-search a city already exhausted
-   without new candidates).
+## Next Steps
+1. Start batch 002: restaurant_leads_batch_002.csv, target another 500.
+2. Exclusion list = every restaurant name + email already in batch_001.csv —
+   never re-collect those. Many small/rural towns and secondary cities within
+   already-touched states are still unexhausted (each region agent so far only
+   sampled a handful of restaurants per city, not an exhaustive list), so batch
+   002 can continue deepening coverage within all 50 states rather than only
+   seeking brand-new cities.
+3. Verification policy (updated 2026-07-17, user-approved): accept an email
+   found either (a) live on the restaurant's own official site, or (b)
+   corroborated by a reputable third-party source (press release, chamber of
+   commerce/tourism listing, official press kit, news article, Michelin guide,
+   OpenTable page showing the restaurant's own domain) clearly tied to that
+   specific restaurant. Never guess/pattern-construct an email.
+4. Process: launch 3-4 parallel research agents per wave, each with a tool-call
+   budget (~40-50 calls) and a target city list, merge+dedupe+commit after each
+   wave lands. If an agent goes idle without reporting, use SendMessage to
+   resume it and ask for immediate results rather than waiting indefinitely.
 
 ## Exclusion List
 Full exclusion list (names + emails already collected) lives inside each
