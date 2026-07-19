@@ -2,10 +2,16 @@
 
 ## Status
 - Project started: 2026-07-15
-- **Batch 001: COMPLETE — 508 verified restaurants, all 50 states + DC represented.**
-- Total verified restaurants collected so far: 508
+- **Batch 001: COMPLETE — 508 verified restaurants.**
+- **Batch 002: COMPLETE — 500 verified restaurants, no dupes vs batch 001.**
+- Total verified restaurants collected so far: 1,008
 - Target milestone: 1,500 (no upper limit; continue until sources exhausted)
-- Batch 002 not yet started.
+- Batch 003 starting now.
+- Dedup process: for every new agent result, grep the candidate email
+  (case-insensitive) against BOTH restaurant_leads_batch_001.csv and
+  restaurant_leads_batch_002.csv (and any later batch files) before
+  appending. Agents do not share an exclusion list with each other, so
+  duplicate rediscovery across waves is common and must be caught here.
 
 ## Methodology
 - Nationwide coverage via regional research passes (see Region Groups below).
@@ -53,25 +59,27 @@
 
 ## Batch Files
 - restaurant_leads_batch_001.csv — COMPLETE, 508 restaurants, all 50 states + DC.
+- restaurant_leads_batch_002.csv — COMPLETE, 500 restaurants.
+- restaurant_leads_batch_003.csv — starting now, target 500.
 
 ## Next Steps
-1. Start batch 002: restaurant_leads_batch_002.csv, target another 500.
-2. Exclusion list = every restaurant name + email already in batch_001.csv —
-   never re-collect those. Many small/rural towns and secondary cities within
-   already-touched states are still unexhausted (each region agent so far only
-   sampled a handful of restaurants per city, not an exhaustive list), so batch
-   002 can continue deepening coverage within all 50 states rather than only
-   seeking brand-new cities.
-3. Verification policy (updated 2026-07-17, user-approved): accept an email
+1. Continue deepening coverage across all 50 states — most cities so far only
+   have a handful of restaurants sampled, not an exhaustive list, so there is
+   plenty of room to keep finding new independents in already-touched cities
+   as well as reaching brand-new towns.
+2. Verification policy (updated 2026-07-17, user-approved): accept an email
    found either (a) live on the restaurant's own official site, or (b)
    corroborated by a reputable third-party source (press release, chamber of
    commerce/tourism listing, official press kit, news article, Michelin guide,
    OpenTable page showing the restaurant's own domain) clearly tied to that
    specific restaurant. Never guess/pattern-construct an email.
-4. Process: launch 3-4 parallel research agents per wave, each with a tool-call
+3. Process: launch 2-3 parallel research agents per wave, each with a tool-call
    budget (~40-50 calls) and a target city list, merge+dedupe+commit after each
    wave lands. If an agent goes idle without reporting, use SendMessage to
    resume it and ask for immediate results rather than waiting indefinitely.
+4. Dedup: always grep the candidate email against ALL existing batch CSVs
+   before appending (agents don't know about each other's or prior waves'
+   results).
 
 ## Exclusion List
 Full exclusion list (names + emails already collected) lives inside each
