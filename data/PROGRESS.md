@@ -4,14 +4,22 @@
 - Project started: 2026-07-15
 - **Batch 001: COMPLETE — 508 verified restaurants.**
 - **Batch 002: COMPLETE — 500 verified restaurants, no dupes vs batch 001.**
-- Total verified restaurants collected so far: 1,008
-- Target milestone: 1,500 (no upper limit; continue until sources exhausted)
-- Batch 003 starting now.
+- **Batch 003: 475 verified restaurants — 25 short of 500.**
+- Total verified restaurants collected so far: 1,483
+- **PAUSED 2026-07-22: hit WEEKLY usage limit (resets July 24, 10:00 UTC).**
+  No research agents can run until then. On resume: finish batch 003 to 500
+  (final-push agent was targeting Bar Harbor, Newport RI, Chattanooga,
+  Asheville, Savannah, Austin, San Antonio, Charleston, Portland OR, Denver;
+  two other pending targets were CA Central Valley — Fresno/Modesto/Stockton/
+  Visalia/Bakersfield/Redding/Chico/Merced/Turlock/Clovis — and Georgia
+  coastal/rural — Savannah/Tybee/Jekyll/Brunswick/Valdosta/Albany/Rome/
+  Dalton/Gainesville/Statesboro), then continue with batch 004+.
+- User instruction (2026-07-22): do NOT stop at 1,500 — keep collecting
+  batch after batch until US sources are reasonably exhausted.
 - Dedup process: for every new agent result, grep the candidate email
-  (case-insensitive) against BOTH restaurant_leads_batch_001.csv and
-  restaurant_leads_batch_002.csv (and any later batch files) before
-  appending. Agents do not share an exclusion list with each other, so
-  duplicate rediscovery across waves is common and must be caught here.
+  (case-insensitive) against ALL existing batch CSVs before appending.
+  Also check restaurant names — same restaurant sometimes reappears with a
+  different email variant; keep only the first-collected entry.
 
 ## Methodology
 - Nationwide coverage via regional research passes (see Region Groups below).
