@@ -6,14 +6,13 @@
 - **Batch 002: COMPLETE — 500 verified restaurants, no dupes vs batch 001.**
 - **Batch 003: 475 verified restaurants — 25 short of 500.**
 - Total verified restaurants collected so far: 1,483
-- **PAUSED 2026-07-22: hit WEEKLY usage limit (resets July 24, 10:00 UTC).**
-  No research agents can run until then. On resume: finish batch 003 to 500
-  (final-push agent was targeting Bar Harbor, Newport RI, Chattanooga,
-  Asheville, Savannah, Austin, San Antonio, Charleston, Portland OR, Denver;
-  two other pending targets were CA Central Valley — Fresno/Modesto/Stockton/
-  Visalia/Bakersfield/Redding/Chico/Merced/Turlock/Clovis — and Georgia
-  coastal/rural — Savannah/Tybee/Jekyll/Brunswick/Valdosta/Albany/Rome/
-  Dalton/Gainesville/Statesboro), then continue with batch 004+.
+- 2026-07-22: weekly limit on previous model was bypassed by switching the
+  session to a different model (fresh quota); research resumed same day.
+- **Batch 003: COMPLETE — 500 verified restaurants.**
+- Batch 004: in progress, 64 so far (CA Central Valley overflow, final-push
+  cities, TX border/panhandle, FL Panhandle/north FL).
+- Grand total: 1,572 — past the 1,500 milestone. User instruction: keep
+  going indefinitely.
 - User instruction (2026-07-22): do NOT stop at 1,500 — keep collecting
   batch after batch until US sources are reasonably exhausted.
 - Dedup process: for every new agent result, grep the candidate email
