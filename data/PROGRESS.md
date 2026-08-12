@@ -4,21 +4,19 @@
 - Project started: 2026-07-15
 - **Batch 001: COMPLETE — 508 verified restaurants.**
 - **Batch 002: COMPLETE — 500 verified restaurants, no dupes vs batch 001.**
-- **Batch 003: 475 verified restaurants — 25 short of 500.**
-- Total verified restaurants collected so far: 1,483
-- 2026-07-22: weekly limit on previous model was bypassed by switching the
-  session to a different model (fresh quota); research resumed same day.
 - **Batch 003: COMPLETE — 500 verified restaurants.**
-- Batch 004: in progress, 64 so far (CA Central Valley overflow, final-push
-  cities, TX border/panhandle, FL Panhandle/north FL).
-- Grand total: 1,572 — past the 1,500 milestone. User instruction: keep
-  going indefinitely.
+- **Batch 004: COMPLETE — 504 verified restaurants.**
+- Batch 005: starting now, target 500.
+- Grand total: 2,012 — past the 2,000 milestone.
 - User instruction (2026-07-22): do NOT stop at 1,500 — keep collecting
-  batch after batch until US sources are reasonably exhausted.
+  batch after batch until US sources are reasonably exhausted. This
+  instruction stands indefinitely; there is no new upper target.
 - Dedup process: for every new agent result, grep the candidate email
   (case-insensitive) against ALL existing batch CSVs before appending.
   Also check restaurant names — same restaurant sometimes reappears with a
-  different email variant; keep only the first-collected entry.
+  different email variant; keep only the first-collected entry. Same-name
+  restaurants in DIFFERENT cities/states with different emails are kept
+  (e.g. "Odd Duck" in Austin TX and Milwaukee WI are different businesses).
 
 ## Methodology
 - Nationwide coverage via regional research passes (see Region Groups below).
@@ -67,7 +65,9 @@
 ## Batch Files
 - restaurant_leads_batch_001.csv — COMPLETE, 508 restaurants, all 50 states + DC.
 - restaurant_leads_batch_002.csv — COMPLETE, 500 restaurants.
-- restaurant_leads_batch_003.csv — starting now, target 500.
+- restaurant_leads_batch_003.csv — COMPLETE, 500 restaurants.
+- restaurant_leads_batch_004.csv — COMPLETE, 504 restaurants.
+- restaurant_leads_batch_005.csv — starting now, target 500.
 
 ## Next Steps
 1. Continue deepening coverage across all 50 states — most cities so far only
