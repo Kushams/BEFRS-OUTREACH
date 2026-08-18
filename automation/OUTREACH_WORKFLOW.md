@@ -22,7 +22,7 @@ Only publicly visible business contact addresses with a traceable source URL may
 
 Use the sender `Liz@befrs.us`. Use the approved HTML template and replace `{{Restaurant Name}}` with the recipient restaurant name. Use the subject `{{Restaurant Name}} Collaboration Opportunity: 2026 Q3 Dining Experience - BEST EVER FOOD REVIEW SHOW`.
 
-Schedule no more than 10 messages per day in Africa/Lagos time, using 10-minute intervals within the 2:00–5:00 PM window. Do not send duplicates, follow-ups, or messages without a traceable source URL. The messages should use Zoho Mail scheduled delivery so they remain visible in the account's scheduled outbox.
+Target 10 messages per day in Africa/Lagos time. Prefer starting at 2:00 PM and use 10-minute intervals. If necessary, continue beyond 5:00 PM; 5:00 PM is not a hard stop. If execution starts later, use the next available 10-minute slots and still schedule 10 whenever 10 eligible recipient addresses exist. Do not send duplicates, follow-ups, or messages without a traceable source URL. The messages should use Zoho Mail scheduled delivery so they remain visible in the account's scheduled outbox.
 
 ## Shared-state rules
 
