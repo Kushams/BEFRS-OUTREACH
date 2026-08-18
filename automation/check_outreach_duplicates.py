@@ -12,6 +12,7 @@ modifies repository data.
 from __future__ import annotations
 
 import csv
+import re
 import sys
 from pathlib import Path
 
@@ -28,6 +29,11 @@ def load_rows(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
+def split_emails(value: str) -> list[str]:
+    """Split a multi-email cell while accepting semicolons, commas, or newlines."""
+    return [norm(part) for part in re.split(r"[;,\n]+", value or "") if norm(part)]
+
+
 def main() -> int:
     if len(sys.argv) != 2:
         print(f"usage: {sys.argv[0]} candidates.csv", file=sys.stderr)
@@ -41,7 +47,11 @@ def main() -> int:
     if audit.exists():
         existing.extend(load_rows(audit))
 
-    email_keys = {norm(row.get("Business Email", row.get("business_email", ""))) for row in existing}
+    email_keys = {
+        email
+        for row in existing
+        for email in split_emails(row.get("Business Email", row.get("business_email", "")))
+    }
     identity_keys = {
         (
             norm(row.get("Restaurant Name", row.get("restaurant_name", ""))),
@@ -57,14 +67,14 @@ def main() -> int:
         writer = csv.DictWriter(sys.stdout, fieldnames=fieldnames + ["suppression_reason"])
         writer.writeheader()
         for row in candidates:
-            email = norm(row.get("business_email", row.get("Business Email", "")))
+            email_values = split_emails(row.get("business_email", row.get("Business Email", "")))
             identity = (
                 norm(row.get("restaurant_name", row.get("Restaurant Name", ""))),
                 norm(row.get("city", row.get("City", ""))),
                 norm(row.get("state", row.get("State", ""))),
             )
             reasons: list[str] = []
-            if email and email in email_keys:
+            if any(email in email_keys for email in email_values):
                 reasons.append("email_match")
             if identity != ("", "", "") and identity in identity_keys:
                 reasons.append("restaurant_identity_match")

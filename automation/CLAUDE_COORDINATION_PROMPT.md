@@ -1,36 +1,61 @@
 # Copy-ready prompt for Claude
 
-You are one participant in a shared BEFRS restaurant-outreach workflow. Another automated workflow also researches restaurants and schedules outreach. Both workflows use the same GitHub Pull Request #1 branch:
+You are part of a shared BEFRS restaurant-outreach workflow. Another automated workflow researches public restaurant leads and schedules outreach through Zoho Mail. Both workflows coordinate through the same GitHub repository and branch:
 
-`Kushams/BEFRS-OUTREACH`, branch `claude/us-restaurant-email-database-y8g2j2`
+- Repository: `Kushams/BEFRS-OUTREACH`
+- Branch: `claude/us-restaurant-email-database-y8g2j2`
+- Pull Request: `https://github.com/Kushams/BEFRS-OUTREACH/pull/1`
 
-Coordinate through the repository and do not treat your own previous context as authoritative.
+The GitHub branch is the shared source of truth for lead history and outreach history. Always refresh the latest branch before doing research or writing records. Do not rely on an old local copy.
 
-## Before researching or adding any lead
+## Files you must read first
 
-1. Pull or refresh the latest branch contents.
-2. Read every `data/restaurant_leads_batch_*.csv` file.
-3. Read `data/outreach_scheduled.csv`.
-4. Normalize every email by trimming whitespace and converting it to lowercase.
-5. Exclude any candidate whose normalized email already appears in either source.
-6. Also exclude a same-business match when restaurant name, city, and state match an existing record, even if the email address differs. Same-name restaurants in different cities or states are allowed only when the evidence shows they are different businesses.
+Read every file matching `data/restaurant_leads_batch_*.csv`. These files contain restaurants and public business emails already collected. Also read `data/outreach_scheduled.csv`, which records email addresses already scheduled or sent by the outreach workflow. The restaurant batch CSVs are a suppression list, not the source of new leads for the scheduler.
 
-## Lead-quality rules
+## Deduplication rules
 
-Research new U.S. restaurants from public sources. Every business email must be visibly published or clearly corroborated by a traceable source, and the source URL must be recorded. Never guess an email address from a domain pattern. Do not use the existing batch CSVs as a source of new leads; they are an exclusion list.
+Normalize all email addresses by trimming whitespace and converting them to lowercase. Treat semicolons, commas, and line breaks as separators when a cell contains multiple email addresses.
 
-## Writing new records
+Before adding or recommending a lead, exclude any email address that already appears in any restaurant batch CSV or in `data/outreach_scheduled.csv`.
 
-When a new lead is verified, append it to the next appropriate `data/restaurant_leads_batch_*.csv` file using the existing columns:
+Treat `restaurant name + city + state` as the restaurant identity. If the same restaurant has several publicly verified business email addresses, keep **one restaurant row** and put all verified addresses in the same `Business Email` cell, separated by semicolons. Do not create duplicate restaurant rows just because the restaurant has another email address.
+
+The automated scheduler may send one email to each verified address for the same restaurant, but each individual address may be contacted only once. A different email address for the same restaurant is not automatically a new restaurant lead; it is an additional contact address for the existing restaurant record.
+
+Same-name restaurants in different cities or states may be separate records only when the evidence confirms that they are different businesses.
+
+## Lead-quality requirements
+
+Research new U.S. restaurants from public sources, including official restaurant websites, official contact pages, Google Maps listings, OpenTable pages, tourism or chamber listings, reputable restaurant guides, and other clearly attributable public sources.
+
+Every email must be visibly published or clearly corroborated as belonging to that specific restaurant. Record the source URL for every email. Never guess an email address, generate one from a domain pattern, or use a generic unverified address.
+
+## How to write new restaurant records
+
+Use the existing CSV columns exactly:
 
 `Restaurant Name,Business Email,City,State,Website,Source URL`
 
-Before committing, repeat the complete email and restaurant-identity deduplication check against all current CSVs and `data/outreach_scheduled.csv`. Preserve existing rows and do not rewrite or reorder unrelated data.
+If a restaurant has multiple verified addresses, store them in one `Business Email` cell, for example:
 
-## Coordination with the outreach scheduler
+`reservations@example.com; events@example.com; catering@example.com`
 
-The automated scheduler may add rows to `data/outreach_scheduled.csv`. Treat those rows as already contacted or scheduled. Never regenerate, recommend, or contact a recipient that appears there. If a merge conflict occurs, preserve both valid records, remove only exact duplicates, and rerun the full deduplication check.
+If different addresses were found on different pages, record the most relevant traceable URLs in the `Source URL` cell, separated by semicolons if necessary. Preserve existing rows and do not reorder or rewrite unrelated data.
 
-Do not add credentials, API tokens, private connector settings, or full email HTML to the repository. Commit only lead data, source URLs, and the shared audit/documentation files.
+Before committing any new data, refresh the branch and repeat the complete email-level and restaurant-identity deduplication check against all restaurant batch CSVs and `data/outreach_scheduled.csv`.
 
-After updating the repository, summarize the number of new records, the files changed, and any records suppressed as duplicates.
+## Coordination with the automated scheduler
+
+The automated workflow uses the same branch. It refreshes the branch before every daily run and again immediately before scheduling Zoho messages. It uses `data/outreach_scheduled.csv` as a record of recipients already scheduled or sent.
+
+Treat every row in `data/outreach_scheduled.csv` as already contacted or scheduled for that specific email address. Do not regenerate, recommend, or contact those addresses. If another address for the same restaurant is not yet recorded, it may be used only if it is publicly verified and is added to the existing restaurant row rather than creating a duplicate restaurant record.
+
+When the scheduler adds multiple addresses for one restaurant, it may add multiple audit rows—one row per recipient address—because each address has its own scheduled status and timestamp.
+
+If a merge conflict occurs, preserve valid distinct addresses for the same restaurant, remove only exact duplicate addresses, and rerun the full deduplication check. Never overwrite newer outreach audit rows with an older branch copy.
+
+## Repository safety
+
+Do not commit passwords, OAuth tokens, API keys, private connector settings, or private credentials. Do not add the complete email HTML to the repository unless explicitly requested; the approved template is stored separately. Commit only verified lead data, source URLs, workflow documentation, and audit information.
+
+After each update, report the number of new restaurant records, the number of additional email addresses added to existing restaurants, the number of suppressed duplicates, the files changed, and the commit or branch updated.
