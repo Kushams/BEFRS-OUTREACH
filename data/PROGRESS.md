@@ -7,8 +7,9 @@
 - **Batch 003: COMPLETE — 500 verified restaurants.**
 - **Batch 004: COMPLETE — 504 verified restaurants.**
 - **Batch 005: COMPLETE — 507 verified restaurants.**
-- Batch 006: starting now, target 500.
-- Grand total: 2,519 — past the 2,500 milestone.
+- **Batch 006: COMPLETE — 503 verified restaurants.**
+- Batch 007: starting now, target 500.
+- Grand total: 3,022 — past the 3,000 milestone.
 - 2026-08-18: Shared coordination protocol established with a second
   automated workflow ("Manus") that schedules outreach via Zoho Mail on
   the same branch/PR (#1). See automation/CLAUDE_COORDINATION_PROMPT.md.
@@ -80,7 +81,8 @@
 - restaurant_leads_batch_003.csv — COMPLETE, 500 restaurants.
 - restaurant_leads_batch_004.csv — COMPLETE, 504 restaurants.
 - restaurant_leads_batch_005.csv — COMPLETE, 507 restaurants.
-- restaurant_leads_batch_006.csv — starting now, target 500.
+- restaurant_leads_batch_006.csv — COMPLETE, 503 restaurants.
+- restaurant_leads_batch_007.csv — starting now, target 500.
 
 ## Next Steps
 1. Continue deepening coverage across all 50 states — most cities so far only
