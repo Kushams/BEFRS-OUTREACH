@@ -2,10 +2,8 @@
 
 ## Status
 - Project started: 2026-08-25.
-- Batch 001: IN PROGRESS — 45/500 rows (UK wave 1 complete; France/Germany
-  wave 1 runs were interrupted before producing output and need to be
-  redone).
-- Grand total: 45 unique restaurants, 45 unique emails.
+- Batch 001: IN PROGRESS — 157/500 rows (UK 45, Germany 38, Italy 74).
+- Grand total: 157 unique restaurants, 157 unique emails.
 
 ## Scope
 - This branch (`claude/europe-restaurant-email-database-xq7t80`) is a
@@ -69,28 +67,39 @@
    merge (batch total + grand total).
 
 ## Batch Files
-- restaurant_leads_batch_001.csv — IN PROGRESS, 45/500 rows so far.
-  - Countries covered so far: United Kingdom (45) — London, Manchester,
-    Edinburgh, Glasgow, Bristol, Cardiff, Leeds/Horsforth, Belfast,
-    Brighton, Oxford/Cotswolds, Cambridge, York, Bath, Newcastle upon
-    Tyne, Liverpool, Birmingham, Padstow, Ullapool, Norwich, Aberdeen,
-    Machynlleth, Southampton, Portsmouth.
+- restaurant_leads_batch_001.csv — IN PROGRESS, 157/500 rows so far.
+  - United Kingdom (45) — London, Manchester, Edinburgh, Glasgow,
+    Bristol, Cardiff, Leeds/Horsforth, Belfast, Brighton, Oxford/
+    Cotswolds, Cambridge, York, Bath, Newcastle upon Tyne, Liverpool,
+    Birmingham, Padstow, Ullapool, Norwich, Aberdeen, Machynlleth,
+    Southampton, Portsmouth.
+  - Germany (38) — Berlin, Munich, Hamburg, Cologne, Frankfurt,
+    Stuttgart, Düsseldorf, Dresden, Leipzig, Nuremberg.
+  - Italy (74) — Rome, Milan, Florence, Venice, Naples, Bologna, Turin,
+    Genoa, Verona, Bari.
 
 ## Country Progress Tracker
 - **United Kingdom**: wave 1 done (45 restaurants). Still needs deeper
   coverage of smaller towns/regions before considered exhausted.
+- **Germany**: wave 1 done (38 restaurants, all 10 major cities). Needs
+  deeper coverage of smaller towns before considered exhausted.
+- **Italy**: wave 1 done (74 restaurants, all 10 major cities). Needs
+  deeper coverage of smaller towns/coastal areas before considered
+  exhausted.
+- **Spain**: wave running (Madrid, Barcelona, Valencia, Seville, Bilbao,
+  San Sebastián, Málaga, Granada, Palma de Mallorca, Zaragoza).
+- **Netherlands**: wave running (Amsterdam, Rotterdam, The Hague,
+  Utrecht, Eindhoven, Groningen, Maastricht, Haarlem, Leiden, Delft).
 - **France**: ON HOLD per operator — they already have 700+ France leads
   and will upload a CSV. Do NOT research France until that's provided;
   resume only after the operator's file is merged in.
-- **Germany**: not yet started (wave 1 attempt was interrupted, no data
-  collected — redo from scratch).
-- **Ireland, Belgium, Netherlands, Luxembourg, Switzerland, Austria,
-  Liechtenstein, Denmark, Sweden, Norway, Finland, Iceland, Estonia,
-  Latvia, Lithuania, Spain, Portugal, Italy, Greece, Malta, Cyprus,
-  Andorra, Monaco, San Marino, Vatican City, Poland, Czechia, Slovakia,
-  Hungary, Slovenia, Croatia, Albania, Bosnia and Herzegovina, Serbia,
-  Montenegro, Kosovo, North Macedonia, Bulgaria, Romania, Ukraine,
-  Moldova, Belarus, Russia, Türkiye, Georgia, Armenia, Azerbaijan**: not
-  yet started.
-- Next up: France and Germany (wave 2), then Italy/Spain/Netherlands
-  (wave 3).
+- **Ireland, Belgium, Luxembourg, Switzerland, Austria, Liechtenstein,
+  Denmark, Sweden, Norway, Finland, Iceland, Estonia, Latvia, Lithuania,
+  Portugal, Greece, Malta, Cyprus, Andorra, Monaco, San Marino, Vatican
+  City, Poland, Czechia, Slovakia, Hungary, Slovenia, Croatia, Albania,
+  Bosnia and Herzegovina, Serbia, Montenegro, Kosovo, North Macedonia,
+  Bulgaria, Romania, Ukraine, Moldova, Belarus, Russia, Türkiye, Georgia,
+  Armenia, Azerbaijan**: not yet started.
+- Next up: after Spain/Netherlands land, continue with Portugal,
+  Switzerland/Austria, Ireland/Belgium, then the Nordics, Balkans, and
+  Eastern Europe. France resumes once operator's CSV is merged.
