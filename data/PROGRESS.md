@@ -2,11 +2,13 @@
 
 ## Status
 - Project started: 2026-08-25.
-- Batch 001: IN PROGRESS — 421/500 rows (UK 45, Germany 38, Italy 74,
+- Batch 001: IN PROGRESS — 474/500 rows (UK 45, Germany 38, Italy 74,
   Spain 29, Netherlands 33, Portugal 21, Switzerland 28, Austria 15,
   Ireland 20, Belgium 23, Denmark 12, Sweden 9, Norway 9, Finland 8,
-  Poland 17, Czechia 8, Hungary 8, Greece 14, Croatia 10).
-- Grand total across branch: 1,203 unique restaurants (421 in
+  Poland 17, Czechia 8, Hungary 8, Greece 14, Croatia 10, Estonia 8,
+  Latvia 8, Lithuania 10, Slovakia 7, Slovenia 8, Serbia 7, Bosnia and
+  Herzegovina 5).
+- Grand total across branch: 1,256 unique restaurants (474 in
   batch_001 + 782 in france_leads_operator_provided.csv, tracked
   separately per operator instruction — see "France" section below).
 
