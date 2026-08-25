@@ -1,20 +1,30 @@
 # BEFRS European Restaurant Outreach Database — Progress Tracker
 
 ## Status
-- Project started: (fill in on first real session)
-- Batch 001: starting now, target 500.
-- Grand total: 0.
+- Project started: 2026-08-25.
+- Batch 001: IN PROGRESS — 45/500 rows (UK wave 1 complete; France/Germany
+  wave 1 runs were interrupted before producing output and need to be
+  redone).
+- Grand total: 45 unique restaurants, 45 unique emails.
 
 ## Scope
-- This branch (`claude/europe-restaurant-email-database`) is a separate,
-  independent lead-collection effort from the US database on
+- This branch (`claude/europe-restaurant-email-database-xq7t80`) is a
+  separate, independent lead-collection effort from the US database on
   `claude/us-restaurant-email-database-y8g2j2`. Do not cross-reference or
   merge data between the two branches — they are intentionally isolated
   so European and US leads never collide or get deduplicated against
   each other.
-- Countries/regions: TBD by the operator on first use — e.g. UK, Ireland,
-  France, Italy, Spain, Germany, Netherlands, Portugal, Greece, etc.
-  Update this section once scope is confirmed.
+- Geographic scope: the entire European continent (not just EU), per
+  operator instructions — UK, Ireland, France, Belgium, Netherlands,
+  Luxembourg, Germany, Switzerland, Austria, Liechtenstein, Denmark,
+  Sweden, Norway, Finland, Iceland, Estonia, Latvia, Lithuania, Spain,
+  Portugal, Italy, Greece, Malta, Cyprus, Andorra, Monaco, San Marino,
+  Vatican City, Poland, Czechia, Slovakia, Hungary, Slovenia, Croatia,
+  Albania, Bosnia and Herzegovina, Serbia, Montenegro, Kosovo, North
+  Macedonia, Bulgaria, Romania, Ukraine, Moldova, Belarus, Russia,
+  Türkiye, Georgia, Armenia, Azerbaijan. Search whole countries (capitals
+  + major/medium/small cities + towns), not just capitals, and use
+  local-language search terms alongside English.
 
 ## Methodology
 - Same verification bar as the US project: every restaurant must have a
@@ -58,4 +68,27 @@
    merge (batch total + grand total).
 
 ## Batch Files
-- restaurant_leads_batch_001.csv — starting now, target 500.
+- restaurant_leads_batch_001.csv — IN PROGRESS, 45/500 rows so far.
+  - Countries covered so far: United Kingdom (45) — London, Manchester,
+    Edinburgh, Glasgow, Bristol, Cardiff, Leeds/Horsforth, Belfast,
+    Brighton, Oxford/Cotswolds, Cambridge, York, Bath, Newcastle upon
+    Tyne, Liverpool, Birmingham, Padstow, Ullapool, Norwich, Aberdeen,
+    Machynlleth, Southampton, Portsmouth.
+
+## Country Progress Tracker
+- **United Kingdom**: wave 1 done (45 restaurants). Still needs deeper
+  coverage of smaller towns/regions before considered exhausted.
+- **France**: not yet started (wave 1 attempt was interrupted, no data
+  collected — redo from scratch).
+- **Germany**: not yet started (wave 1 attempt was interrupted, no data
+  collected — redo from scratch).
+- **Ireland, Belgium, Netherlands, Luxembourg, Switzerland, Austria,
+  Liechtenstein, Denmark, Sweden, Norway, Finland, Iceland, Estonia,
+  Latvia, Lithuania, Spain, Portugal, Italy, Greece, Malta, Cyprus,
+  Andorra, Monaco, San Marino, Vatican City, Poland, Czechia, Slovakia,
+  Hungary, Slovenia, Croatia, Albania, Bosnia and Herzegovina, Serbia,
+  Montenegro, Kosovo, North Macedonia, Bulgaria, Romania, Ukraine,
+  Moldova, Belarus, Russia, Türkiye, Georgia, Armenia, Azerbaijan**: not
+  yet started.
+- Next up: France and Germany (wave 2), then Italy/Spain/Netherlands
+  (wave 3).
