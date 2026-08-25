@@ -2,13 +2,12 @@
 
 ## Status
 - Project started: 2026-08-25.
-- Batch 001: IN PROGRESS — 364/500 rows (UK 45, Germany 38, Italy 74,
+- Batch 001: IN PROGRESS — 421/500 rows (UK 45, Germany 38, Italy 74,
   Spain 29, Netherlands 33, Portugal 21, Switzerland 28, Austria 15,
-  Ireland 20, Belgium 23, Denmark 12, Sweden 9, Norway 9, Finland 8).
-- Grand total: 364 unique restaurants, 364 unique emails.
-- Note: Poland/Czechia/Hungary and Greece/Croatia wave-4 agents failed
-  mid-run due to a session usage limit (resets 10:30pm UTC) — retry
-  these next, not yet reflected in totals above.
+  Ireland 20, Belgium 23, Denmark 12, Sweden 9, Norway 9, Finland 8,
+  Poland 17, Czechia 8, Hungary 8, Greece 14, Croatia 10).
+- Grand total: 421 unique restaurants, 421 unique emails (batch_001
+  only — France operator-provided leads tracked separately, see below).
 
 ## Scope
 - This branch (`claude/europe-restaurant-email-database-xq7t80`) is a
@@ -97,28 +96,47 @@
   - Sweden (9) — Stockholm, Gothenburg, Malmö.
   - Norway (9) — Oslo, Bergen, Trondheim.
   - Finland (8) — Helsinki, Turku, Tampere.
+  - Poland (17) — Warsaw, Kraków, Wrocław, Gdańsk.
+  - Czechia (8) — Prague, Brno, Český Krumlov.
+  - Hungary (8) — Budapest, Debrecen, Szeged.
+  - Greece (14) — Athens, Thessaloniki, Santorini (Fira/Oia), Mykonos,
+    Chania, Heraklion, Rhodes/Lindos.
+  - Croatia (10) — Zagreb, Split, Dubrovnik, Rovinj.
 
 ## Country Progress Tracker
 - **United Kingdom, Germany, Italy, Spain, Netherlands, Portugal,
   Switzerland, Austria, Ireland, Belgium, Denmark, Sweden, Norway,
-  Finland**: wave 1 done (major/mid cities covered per city lists
-  above). All still need deeper coverage of smaller towns/regions
-  before considered exhausted.
-- **France**: ON HOLD per operator — they already have 700+ France leads
-  and will upload a CSV. Do NOT research France until that's provided;
-  resume only after the operator's file is merged in.
-- **Poland, Czechia, Hungary**: wave 4 attempt FAILED mid-run (session
-  usage limit hit, resets 10:30pm UTC) — retry from scratch, no data
-  collected yet.
-- **Greece, Croatia**: wave 4 attempt FAILED mid-run (same session usage
-  limit) — retry from scratch, no data collected yet.
+  Finland, Poland, Czechia, Hungary, Greece, Croatia**: wave 1 done
+  (major/mid cities covered per city lists above). All still need
+  deeper coverage of smaller towns/regions before considered exhausted.
+- **France**: SEPARATE TRACK per operator — see "France (operator-
+  provided)" section below. Not part of the wave 1 research rotation.
 - **Luxembourg, Liechtenstein, Iceland, Estonia, Latvia, Lithuania,
   Malta, Cyprus, Andorra, Monaco, San Marino, Vatican City, Slovakia,
   Slovenia, Albania, Bosnia and Herzegovina, Serbia, Montenegro, Kosovo,
   North Macedonia, Bulgaria, Romania, Ukraine, Moldova, Belarus, Russia,
   Türkiye, Georgia, Armenia, Azerbaijan**: not yet started.
-- Next up: retry Poland/Czechia/Hungary and Greece/Croatia, then
-  continue through the Balkans and Eastern Europe. France resumes once
-  operator's CSV is merged. After wave 1 finishes across all countries,
-  start wave 2 passes on smaller cities/towns per country for deeper
-  coverage.
+- Next up: Balkans/Baltics (Slovakia/Slovenia, Albania/Serbia/Bosnia,
+  Estonia/Latvia/Lithuania), then Eastern Europe (Ukraine, Romania,
+  Bulgaria), then the remaining trans-continental countries. After wave
+  1 finishes across all countries, start wave 2 passes on smaller
+  cities/towns per country for deeper coverage.
+
+## France (operator-provided)
+- Operator already had 700+ France leads from another source and
+  uploaded 3 files (Paris, general FR, small FR2 supplement — 782 rows
+  combined after merge, 0 exact-duplicate emails across the 3 files).
+- These live in `data/france_leads_operator_provided.csv` on this
+  branch — counted in the grand total but NOT part of the sequential
+  `restaurant_leads_batch_NNN.csv` deliverables (operator already has
+  this data, no need to redeliver it).
+- Validation pass: all 782 emails matched valid email syntax. DNS
+  checked all 458 unique domains (A + MX records) — 37 domains have
+  neither and are almost certainly dead; these rows are flagged
+  `needs_verification=true` in the operator-provided file.
+- Any row from the operator file where research finds the email was
+  wrong and locates the real one: the CORRECTED row counts as newly
+  extracted work and goes into the normal batch_NNN pipeline (not just
+  the operator-provided file), per operator instruction.
+- Research on the 37 flagged France restaurants is only run if/when
+  time allows — France stays otherwise out of the wave rotation.
