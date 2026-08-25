@@ -34,6 +34,27 @@
   + major/medium/small cities + towns), not just capitals, and use
   local-language search terms alongside English.
 
+## Search method upgrade (per operator, applies to all waves going forward)
+Operator asked for a much more intensive/deep search across every possible
+public source, not just official restaurant websites. Every wave from this
+point on should actively pull verified emails from ALL of these source types
+(whichever finds a real published email fastest for each restaurant):
+- Official restaurant websites (contact/mentions légales/Impressum pages)
+- OpenTable and TheFork/other reservation platform listings (when they show
+  the restaurant's own email or link to a site with one)
+- TripAdvisor listings
+- Official Facebook Pages (About/Contact section)
+- Official Instagram Business profiles (bio/contact button)
+- Official Twitter/X profiles (bio)
+- Google Business Profile listings
+- Local/national business directories (PagesJaunes, Impressum registries,
+  government business registries, chamber-of-commerce listings)
+- Tourism board / office de tourisme listings
+- Local press/food publications ("best restaurants in X" articles)
+The verification bar is unchanged: only an ACTUALLY DISPLAYED email counts
+(never guessed/pattern-constructed), and social media only counts when it's
+the restaurant's own official account, not a fan page or random post.
+
 ## Methodology
 - Same verification bar as the US project: every restaurant must have a
   publicly verifiable business email found on an official website,
