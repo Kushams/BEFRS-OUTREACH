@@ -33,11 +33,12 @@
   corroborated third-party source (press release, tourism board listing,
   official press kit, news article) clearly tied to that specific
   restaurant. Never guess or pattern-construct an email address.
-- Columns (note: `State` replaced with `Country` since this is a
-  international dataset — adjust here and in existing batch CSVs together
-  if the operator wants a different column set, e.g. adding a `Region`
-  column for country subdivisions):
-  `Restaurant Name,Business Email,City,Country,Website,Source URL`
+- Columns (note: `State` replaced with `Country` since this is an
+  international dataset, plus a `Region/State` column added for the
+  first-level administrative subdivision — e.g. England's regions,
+  Scotland/Wales/Northern Ireland, German Bundesländer, French régions,
+  Italian regioni, etc. — since Europe doesn't use "states" uniformly):
+  `Restaurant Name,Business Email,City,Region/State,Country,Website,Source URL`
 - Dedup key: restaurant name + city/country, AND email address (both must
   be unique across the whole database on this branch).
 - Batch size: 500 rows per file, saved as
