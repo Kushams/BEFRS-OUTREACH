@@ -2,9 +2,10 @@
 
 ## Status
 - Project started: 2026-08-25.
-- Batch 001: IN PROGRESS — 219/500 rows (UK 45, Germany 38, Italy 74,
-  Spain 29, Netherlands 33).
-- Grand total: 219 unique restaurants, 219 unique emails.
+- Batch 001: IN PROGRESS — 326/500 rows (UK 45, Germany 38, Italy 74,
+  Spain 29, Netherlands 33, Portugal 21, Switzerland 28, Austria 15,
+  Ireland 20, Belgium 23).
+- Grand total: 326 unique restaurants, 326 unique emails.
 
 ## Scope
 - This branch (`claude/europe-restaurant-email-database-xq7t80`) is a
@@ -68,7 +69,7 @@
    merge (batch total + grand total).
 
 ## Batch Files
-- restaurant_leads_batch_001.csv — IN PROGRESS, 219/500 rows so far.
+- restaurant_leads_batch_001.csv — IN PROGRESS, 326/500 rows so far.
   - United Kingdom (45) — London, Manchester, Edinburgh, Glasgow,
     Bristol, Cardiff, Leeds/Horsforth, Belfast, Brighton, Oxford/
     Cotswolds, Cambridge, York, Bath, Newcastle upon Tyne, Liverpool,
@@ -82,29 +83,31 @@
     Sebastián, Málaga, Granada, Palma de Mallorca, Zaragoza.
   - Netherlands (33) — Amsterdam, Rotterdam, The Hague, Utrecht,
     Eindhoven, Groningen, Maastricht, Haarlem, Leiden, Delft.
+  - Portugal (21) — Lisbon, Porto, Faro, Coimbra, Braga, Funchal,
+    Cascais, Sintra, Évora, Albufeira.
+  - Switzerland (28) — Zurich, Geneva, Basel, Bern, Lausanne, Lucerne,
+    Zermatt, Interlaken.
+  - Austria (15) — Vienna, Salzburg, Innsbruck, Graz.
+  - Ireland (20) — Dublin, Cork, Galway, Limerick, Kilkenny, Killarney.
+  - Belgium (23) — Brussels, Antwerp, Ghent, Bruges, Liège, Leuven.
 
 ## Country Progress Tracker
-- **United Kingdom**: wave 1 done (45 restaurants). Still needs deeper
-  coverage of smaller towns/regions before considered exhausted.
-- **Germany**: wave 1 done (38 restaurants, all 10 major cities). Needs
-  deeper coverage of smaller towns before considered exhausted.
-- **Italy**: wave 1 done (74 restaurants, all 10 major cities). Needs
-  deeper coverage of smaller towns/coastal areas before considered
-  exhausted.
-- **Spain**: wave 1 done (29 restaurants, all 10 major cities). Needs
-  deeper coverage before considered exhausted.
-- **Netherlands**: wave 1 done (33 restaurants, all 10 major cities).
-  Needs deeper coverage before considered exhausted.
+- **United Kingdom, Germany, Italy, Spain, Netherlands, Portugal,
+  Switzerland, Austria, Ireland, Belgium**: wave 1 done (major/mid
+  cities covered per city lists above). All still need deeper coverage
+  of smaller towns/regions before considered exhausted.
 - **France**: ON HOLD per operator — they already have 700+ France leads
   and will upload a CSV. Do NOT research France until that's provided;
   resume only after the operator's file is merged in.
-- **Ireland, Belgium, Luxembourg, Switzerland, Austria, Liechtenstein,
-  Denmark, Sweden, Norway, Finland, Iceland, Estonia, Latvia, Lithuania,
-  Portugal, Greece, Malta, Cyprus, Andorra, Monaco, San Marino, Vatican
-  City, Poland, Czechia, Slovakia, Hungary, Slovenia, Croatia, Albania,
-  Bosnia and Herzegovina, Serbia, Montenegro, Kosovo, North Macedonia,
-  Bulgaria, Romania, Ukraine, Moldova, Belarus, Russia, Türkiye, Georgia,
-  Armenia, Azerbaijan**: not yet started.
-- Next up: Portugal, Switzerland/Austria, Ireland/Belgium wave, then the
-  Nordics, Balkans, and Eastern Europe. France resumes once operator's
-  CSV is merged.
+- **Luxembourg, Liechtenstein, Denmark, Sweden, Norway, Finland, Iceland,
+  Estonia, Latvia, Lithuania, Greece, Malta, Cyprus, Andorra, Monaco,
+  San Marino, Vatican City, Poland, Czechia, Slovakia, Hungary,
+  Slovenia, Croatia, Albania, Bosnia and Herzegovina, Serbia,
+  Montenegro, Kosovo, North Macedonia, Bulgaria, Romania, Ukraine,
+  Moldova, Belarus, Russia, Türkiye, Georgia, Armenia, Azerbaijan**: not
+  yet started.
+- Next up: Nordics (Denmark/Sweden/Norway/Finland), Poland/Czechia/
+  Hungary, Greece/Croatia, then continue through the Balkans and Eastern
+  Europe. France resumes once operator's CSV is merged. After wave 1
+  finishes across all countries, start wave 2 passes on smaller
+  cities/towns per country for deeper coverage.
