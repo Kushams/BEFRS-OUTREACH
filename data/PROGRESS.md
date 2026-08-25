@@ -79,8 +79,9 @@
 ## Country Progress Tracker
 - **United Kingdom**: wave 1 done (45 restaurants). Still needs deeper
   coverage of smaller towns/regions before considered exhausted.
-- **France**: not yet started (wave 1 attempt was interrupted, no data
-  collected — redo from scratch).
+- **France**: ON HOLD per operator — they already have 700+ France leads
+  and will upload a CSV. Do NOT research France until that's provided;
+  resume only after the operator's file is merged in.
 - **Germany**: not yet started (wave 1 attempt was interrupted, no data
   collected — redo from scratch).
 - **Ireland, Belgium, Netherlands, Luxembourg, Switzerland, Austria,
