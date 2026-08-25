@@ -2,15 +2,18 @@
 
 ## Status
 - Project started: 2026-08-25.
-- Batch 001: IN PROGRESS — 474/500 rows (UK 45, Germany 38, Italy 74,
+- Batch 001: IN PROGRESS — 488/500 rows (UK 45, Germany 38, Italy 74,
   Spain 29, Netherlands 33, Portugal 21, Switzerland 28, Austria 15,
   Ireland 20, Belgium 23, Denmark 12, Sweden 9, Norway 9, Finland 8,
   Poland 17, Czechia 8, Hungary 8, Greece 14, Croatia 10, Estonia 8,
   Latvia 8, Lithuania 10, Slovakia 7, Slovenia 8, Serbia 7, Bosnia and
-  Herzegovina 5).
-- Grand total across branch: 1,256 unique restaurants (474 in
+  Herzegovina 5, France 13 [corrections only, see below]).
+- Grand total across branch: 1,270 unique restaurants (488 in
   batch_001 + 782 in france_leads_operator_provided.csv, tracked
   separately per operator instruction — see "France" section below).
+  Note: 13 of the France rows are corrected/replacement leads for
+  restaurants originally flagged bad in the operator file, not
+  double-counted duplicates of the operator's 782.
 
 ## Scope
 - This branch (`claude/europe-restaurant-email-database-xq7t80`) is a
@@ -125,7 +128,7 @@
   1 finishes across all countries, start wave 2 passes on smaller
   cities/towns per country for deeper coverage.
 
-## France (operator-provided)
+## France (operator-provided + new research)
 - Operator already had 700+ France leads from another source and
   uploaded 3 files (Paris, general FR, small FR2 supplement — 782 rows
   combined after merge, 0 exact-duplicate emails across the 3 files).
@@ -134,12 +137,22 @@
   `restaurant_leads_batch_NNN.csv` deliverables (operator already has
   this data, no need to redeliver it).
 - Validation pass: all 782 emails matched valid email syntax. DNS
-  checked all 458 unique domains (A + MX records) — 37 domains have
-  neither and are almost certainly dead; these rows are flagged
-  `needs_verification=true` in the operator-provided file.
-- Any row from the operator file where research finds the email was
-  wrong and locates the real one: the CORRECTED row counts as newly
-  extracted work and goes into the normal batch_NNN pipeline (not just
-  the operator-provided file), per operator instruction.
-- Research on the 37 flagged France restaurants is only run if/when
-  time allows — France stays otherwise out of the wave rotation.
+  checked all 458 unique domains (A + MX records) — 37 domains had
+  neither. Research pass on those 37: 13 corrected (real replacement
+  email found, now in batch_001 as newly-extracted leads, and the
+  operator file's `Needs Verification` column set to
+  `corrected-see-batch` for those rows), 3 confirmed permanently closed
+  (`Needs Verification=closed`: 14 Paradis, Le Pain et la Rose,
+  L'Assiette Autour du Vin), 21 still unresolved (`Needs
+  Verification=yes` — active businesses but no public email found, or
+  genuinely unreachable).
+- Operator has since said to RESUME general France research (not just
+  corrections) — but exclude cities/restaurants the operator's 782 rows
+  already cover, to avoid duplicate outreach. Operator's data covers
+  (row counts): Paris 177, Toulouse 109, Bordeaux 108, Strasbourg 97,
+  Nice 86, Boulogne-Billancourt 65, Lyon 48, Marseille 33, plus small
+  counts (1-8 rows) in ~30 other communes.
+  - Wave 5 France redo: targeting cities NOT heavily covered — Nantes,
+    Rennes, Montpellier, Lille, Reims, Dijon, Grenoble, Nîmes, Le
+    Havre, Angers. Results go into the normal batch_NNN pipeline as
+    new leads (not the operator-provided file).
