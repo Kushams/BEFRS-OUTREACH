@@ -6,8 +6,9 @@
   Spain 29, Netherlands 33, Portugal 21, Switzerland 28, Austria 15,
   Ireland 20, Belgium 23, Denmark 12, Sweden 9, Norway 9, Finland 8,
   Poland 17, Czechia 8, Hungary 8, Greece 14, Croatia 10).
-- Grand total: 421 unique restaurants, 421 unique emails (batch_001
-  only — France operator-provided leads tracked separately, see below).
+- Grand total across branch: 1,203 unique restaurants (421 in
+  batch_001 + 782 in france_leads_operator_provided.csv, tracked
+  separately per operator instruction — see "France" section below).
 
 ## Scope
 - This branch (`claude/europe-restaurant-email-database-xq7t80`) is a
