@@ -10,10 +10,12 @@
   Hungary 8, Greece 14, Croatia 10, Estonia 8, Latvia 8, Lithuania 10,
   Slovakia 7, Slovenia 8, Serbia 7, Bosnia and Herzegovina 5, France 84
   [13 corrections + 71 deep-search wave 6, see below]).
-- Batch 002: STARTED (header only so far, 0 rows) — next new leads go
-  here.
-- Grand total across branch: 1,340 unique restaurants (558 in
-  batch_001 + 782 in france_leads_operator_provided.csv, tracked
+- Batch 002: IN PROGRESS — 37 rows (Luxembourg 5: Luxembourg City 2,
+  Esch-sur-Alzette 3 / Iceland 5: Reykjavik 3, Akureyri 2 / Malta 8:
+  Valletta 4, Sliema 2, St. Julian's 2 / Cyprus 19: Nicosia 5,
+  Limassol 8, Larnaca 3, Paphos 3).
+- Grand total across branch: 1,377 unique restaurants (558 batch_001 +
+  37 batch_002 + 782 france_leads_operator_provided.csv, tracked
   separately per operator instruction — see "France" section below).
 
 ## Scope
