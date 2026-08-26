@@ -10,12 +10,14 @@
   Hungary 8, Greece 14, Croatia 10, Estonia 8, Latvia 8, Lithuania 10,
   Slovakia 7, Slovenia 8, Serbia 7, Bosnia and Herzegovina 5, France 84
   [13 corrections + 71 deep-search wave 6, see below]).
-- Batch 002: IN PROGRESS — 37 rows (Luxembourg 5: Luxembourg City 2,
+- Batch 002: IN PROGRESS — 66 rows (Luxembourg 5: Luxembourg City 2,
   Esch-sur-Alzette 3 / Iceland 5: Reykjavik 3, Akureyri 2 / Malta 8:
   Valletta 4, Sliema 2, St. Julian's 2 / Cyprus 19: Nicosia 5,
-  Limassol 8, Larnaca 3, Paphos 3).
-- Grand total across branch: 1,377 unique restaurants (558 batch_001 +
-  37 batch_002 + 782 france_leads_operator_provided.csv, tracked
+  Limassol 8, Larnaca 3, Paphos 3 / Romania 19: Bucharest 6,
+  Cluj-Napoca 4, Timișoara 3, Brașov 3, Sibiu 3 / Bulgaria 10: Sofia 4,
+  Plovdiv 2, Varna 1, Burgas 3).
+- Grand total across branch: 1,406 unique restaurants (558 batch_001 +
+  66 batch_002 + 782 france_leads_operator_provided.csv, tracked
   separately per operator instruction — see "France" section below).
 
 ## Scope
