@@ -10,14 +10,20 @@
   Hungary 8, Greece 14, Croatia 10, Estonia 8, Latvia 8, Lithuania 10,
   Slovakia 7, Slovenia 8, Serbia 7, Bosnia and Herzegovina 5, France 84
   [13 corrections + 71 deep-search wave 6, see below]).
-- Batch 002: IN PROGRESS — 66 rows (Luxembourg 5: Luxembourg City 2,
-  Esch-sur-Alzette 3 / Iceland 5: Reykjavik 3, Akureyri 2 / Malta 8:
-  Valletta 4, Sliema 2, St. Julian's 2 / Cyprus 19: Nicosia 5,
-  Limassol 8, Larnaca 3, Paphos 3 / Romania 19: Bucharest 6,
-  Cluj-Napoca 4, Timișoara 3, Brașov 3, Sibiu 3 / Bulgaria 10: Sofia 4,
-  Plovdiv 2, Varna 1, Burgas 3).
-- Grand total across branch: 1,406 unique restaurants (558 batch_001 +
-  66 batch_002 + 782 france_leads_operator_provided.csv, tracked
+- Batch 002: IN PROGRESS — 119 rows (Luxembourg 5, Iceland 5, Malta 8,
+  Cyprus 19, Romania 19, Bulgaria 10, Albania 10, Montenegro 11,
+  Kosovo 6, North Macedonia 9, Türkiye 9, Georgia 4, Armenia 2,
+  Azerbaijan 2). Full per-city breakdown for the two most recent merges:
+  - Albania: Tirana 5, Vlorë 3, Sarandë 2
+  - Montenegro: Podgorica 5, Kotor 3, Budva 3
+  - Kosovo: Pristina 2, Prizren 4
+  - North Macedonia: Skopje 3, Ohrid 6
+  - Türkiye: Istanbul 3, Ankara 1, Izmir 1, Antalya 2, Bodrum 2
+  - Georgia: Tbilisi 2, Batumi 2
+  - Armenia: Yerevan 2
+  - Azerbaijan: Baku 2
+- Grand total across branch: 1,459 unique restaurants (558 batch_001 +
+  119 batch_002 + 782 france_leads_operator_provided.csv, tracked
   separately per operator instruction — see "France" section below).
 
 ## Scope
