@@ -10,20 +10,18 @@
   Hungary 8, Greece 14, Croatia 10, Estonia 8, Latvia 8, Lithuania 10,
   Slovakia 7, Slovenia 8, Serbia 7, Bosnia and Herzegovina 5, France 84
   [13 corrections + 71 deep-search wave 6, see below]).
-- Batch 002: IN PROGRESS — 119 rows (Luxembourg 5, Iceland 5, Malta 8,
+- Batch 002: IN PROGRESS — 138 rows (Luxembourg 5, Iceland 5, Malta 8,
   Cyprus 19, Romania 19, Bulgaria 10, Albania 10, Montenegro 11,
   Kosovo 6, North Macedonia 9, Türkiye 9, Georgia 4, Armenia 2,
-  Azerbaijan 2). Full per-city breakdown for the two most recent merges:
-  - Albania: Tirana 5, Vlorë 3, Sarandë 2
-  - Montenegro: Podgorica 5, Kotor 3, Budva 3
-  - Kosovo: Pristina 2, Prizren 4
-  - North Macedonia: Skopje 3, Ohrid 6
-  - Türkiye: Istanbul 3, Ankara 1, Izmir 1, Antalya 2, Bodrum 2
-  - Georgia: Tbilisi 2, Batumi 2
-  - Armenia: Yerevan 2
-  - Azerbaijan: Baku 2
-- Grand total across branch: 1,459 unique restaurants (558 batch_001 +
-  119 batch_002 + 782 france_leads_operator_provided.csv, tracked
+  Azerbaijan 2, Ukraine 10, Moldova 3, Andorra 2, Monaco 3, San
+  Marino 1). Per-city breakdown for the most recent merge:
+  - Ukraine: Kyiv 4, Lviv 4, Odesa 2
+  - Moldova: Chișinău 3
+  - Andorra: Andorra la Vella 2
+  - Monaco: Monaco 3
+  - San Marino: City of San Marino 1
+- Grand total across branch: 1,478 unique restaurants (558 batch_001 +
+  138 batch_002 + 782 france_leads_operator_provided.csv, tracked
   separately per operator instruction — see "France" section below).
 
 ## Scope
@@ -142,23 +140,30 @@ the restaurant's own official account, not a fan page or random post.
   - Croatia (10) — Zagreb, Split, Dubrovnik, Rovinj.
 
 ## Country Progress Tracker
-- **United Kingdom, Germany, Italy, Spain, Netherlands, Portugal,
-  Switzerland, Austria, Ireland, Belgium, Denmark, Sweden, Norway,
-  Finland, Poland, Czechia, Hungary, Greece, Croatia**: wave 1 done
-  (major/mid cities covered per city lists above). All still need
-  deeper coverage of smaller towns/regions before considered exhausted.
+- **Wave 1 done** (major/mid cities covered, still need deeper
+  small-town coverage before considered exhausted): United Kingdom,
+  Germany, Italy, Spain, Netherlands, Portugal, Switzerland, Austria,
+  Ireland, Belgium, Denmark, Sweden, Norway, Finland, Poland, Czechia,
+  Hungary, Greece, Croatia, Estonia, Latvia, Lithuania, Slovakia,
+  Slovenia, Serbia, Bosnia and Herzegovina, Luxembourg, Iceland, Malta,
+  Cyprus, Romania, Bulgaria, Albania, Montenegro, Kosovo, North
+  Macedonia, Türkiye, Georgia, Armenia, Azerbaijan, Ukraine, Moldova,
+  Andorra, Monaco, San Marino.
 - **France**: SEPARATE TRACK per operator — see "France (operator-
-  provided)" section below. Not part of the wave 1 research rotation.
-- **Luxembourg, Liechtenstein, Iceland, Estonia, Latvia, Lithuania,
-  Malta, Cyprus, Andorra, Monaco, San Marino, Vatican City, Slovakia,
-  Slovenia, Albania, Bosnia and Herzegovina, Serbia, Montenegro, Kosovo,
-  North Macedonia, Bulgaria, Romania, Ukraine, Moldova, Belarus, Russia,
-  Türkiye, Georgia, Armenia, Azerbaijan**: not yet started.
-- Next up: Balkans/Baltics (Slovakia/Slovenia, Albania/Serbia/Bosnia,
-  Estonia/Latvia/Lithuania), then Eastern Europe (Ukraine, Romania,
-  Bulgaria), then the remaining trans-continental countries. After wave
-  1 finishes across all countries, start wave 2 passes on smaller
-  cities/towns per country for deeper coverage.
+  provided + new research)" section below. Deep multi-source wave 1
+  done on top of the operator's 782-row dataset; not exhausted.
+- **Not yet started**: Liechtenstein, Vatican City, Belarus, Russia.
+  - Liechtenstein and Vatican City are extremely small (Vatican City
+    has essentially no independent restaurants — mostly Rome
+    spillover); low priority but still worth one pass.
+  - Belarus and Russia: in scope per the original brief (geographic
+    Europe, not EU-only) — worth attempting, but expect low yield and
+    verification difficulty (language, site accessibility, current
+    operating status). Try when other countries are further along.
+- Next up: a Liechtenstein/Vatican City pass, then start wave 2 (deeper
+  small-town/regional coverage) on the countries above that only have a
+  wave 1 pass so far — that's most of them. Belarus/Russia attempted
+  opportunistically.
 
 ## France (operator-provided + new research)
 - Operator already had 700+ France leads from another source and
