@@ -2,18 +2,19 @@
 
 ## Status
 - Project started: 2026-08-25.
-- Batch 001: IN PROGRESS — 488/500 rows (UK 45, Germany 38, Italy 74,
-  Spain 29, Netherlands 33, Portugal 21, Switzerland 28, Austria 15,
-  Ireland 20, Belgium 23, Denmark 12, Sweden 9, Norway 9, Finland 8,
-  Poland 17, Czechia 8, Hungary 8, Greece 14, Croatia 10, Estonia 8,
-  Latvia 8, Lithuania 10, Slovakia 7, Slovenia 8, Serbia 7, Bosnia and
-  Herzegovina 5, France 13 [corrections only, see below]).
-- Grand total across branch: 1,270 unique restaurants (488 in
+- Batch 001: COMPLETE (closed over the 500 target, per operator: don't
+  bother trimming to exactly 500, just start the next batch fresh) —
+  558/500 rows (UK 45, Germany 38, Italy 74, Spain 29, Netherlands 33,
+  Portugal 21, Switzerland 28, Austria 15, Ireland 20, Belgium 23,
+  Denmark 12, Sweden 9, Norway 9, Finland 8, Poland 17, Czechia 8,
+  Hungary 8, Greece 14, Croatia 10, Estonia 8, Latvia 8, Lithuania 10,
+  Slovakia 7, Slovenia 8, Serbia 7, Bosnia and Herzegovina 5, France 84
+  [13 corrections + 71 deep-search wave 6, see below]).
+- Batch 002: STARTED (header only so far, 0 rows) — next new leads go
+  here.
+- Grand total across branch: 1,340 unique restaurants (558 in
   batch_001 + 782 in france_leads_operator_provided.csv, tracked
   separately per operator instruction — see "France" section below).
-  Note: 13 of the France rows are corrected/replacement leads for
-  restaurants originally flagged bad in the operator file, not
-  double-counted duplicates of the operator's 782.
 
 ## Scope
 - This branch (`claude/europe-restaurant-email-database-xq7t80`) is a
@@ -168,12 +169,28 @@ the restaurant's own official account, not a fan page or random post.
   Verification=yes` — active businesses but no public email found, or
   genuinely unreachable).
 - Operator has since said to RESUME general France research (not just
-  corrections) — but exclude cities/restaurants the operator's 782 rows
-  already cover, to avoid duplicate outreach. Operator's data covers
-  (row counts): Paris 177, Toulouse 109, Bordeaux 108, Strasbourg 97,
-  Nice 86, Boulogne-Billancourt 65, Lyon 48, Marseille 33, plus small
-  counts (1-8 rows) in ~30 other communes.
-  - Wave 5 France redo: targeting cities NOT heavily covered — Nantes,
-    Rennes, Montpellier, Lille, Reims, Dijon, Grenoble, Nîmes, Le
-    Havre, Angers. Results go into the normal batch_NNN pipeline as
-    new leads (not the operator-provided file).
+  corrections), excluding restaurants the operator's 782 rows already
+  cover (dedup by exact email + name/city, verified programmatically
+  before every merge). Operator's data covers heavily (row counts):
+  Paris 177, Toulouse 109, Bordeaux 108, Strasbourg 97, Nice 86,
+  Boulogne-Billancourt 65, Lyon 48, Marseille 33, plus small counts
+  (1-8 rows) in ~30 other communes.
+  - Wave 6 France (deep multi-source, 71 new restaurants, all unique
+    vs. both batch_001 and the operator file): Nantes, Rezé, Lille,
+    Montpellier, Saint-Clément-de-Rivière, Reims, Dijon, Grenoble,
+    Nîmes, Le Havre, Sainte-Adresse, Angers, Clermont-Ferrand, Aubière,
+    Metz, Nancy, Vandœuvre-lès-Nancy, Annecy, Veyrier-du-Lac, Avignon,
+    Aix-en-Provence, Perpignan, Cannes, Toulon, Le Mans, La Rochelle,
+    Biarritz, Chamonix-Mont-Blanc, Colmar, Tours, Besançon. Sourced
+    almost entirely from official sites' "mentions légales" pages
+    (French law requires a real contact email there) — fastest, most
+    reliable source for France specifically.
+  - France is NOT exhausted — continue further waves targeting more
+    towns/regions plus deeper passes on OpenTable/TripAdvisor/social
+    media per the search-method upgrade above.
+
+## Operator clarification on batching
+- Don't retroactively trim a batch file to exactly 500 rows once it
+  goes over during a merge — just close it as-is and start the next
+  batch fresh (header only) for future new leads. Batch 001 ended at
+  558 rows for this reason.
