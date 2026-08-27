@@ -10,25 +10,30 @@
   Hungary 8, Greece 14, Croatia 10, Estonia 8, Latvia 8, Lithuania 10,
   Slovakia 7, Slovenia 8, Serbia 7, Bosnia and Herzegovina 5, France 84
   [13 corrections + 71 deep-search wave 6, see below]).
-- Batch 002: IN PROGRESS — 315 rows (Luxembourg 5, Iceland 5, Malta 8,
+- Batch 002: IN PROGRESS — 386 rows (Luxembourg 5, Iceland 5, Malta 8,
   Cyprus 19, Romania 19, Bulgaria 10, Albania 10, Montenegro 11,
   Kosovo 6, North Macedonia 9, Türkiye 9, Georgia 4, Armenia 2,
   Azerbaijan 2, Ukraine 10, Moldova 3, Andorra 2, Monaco 3, San
-  Marino 1, Germany [wave 2] 39, United Kingdom [wave 2] 26,
+  Marino 1, Germany [wave 1+2] 77, United Kingdom [wave 1+2] 71,
   Liechtenstein 7, Belarus 2, Russia 9, Italy [wave 2] 36, Netherlands
-  [wave 2] 18, Portugal [wave 2] 10, Spain [wave 2] 30). Per-city
-  breakdown for the most recent merge (Spain wave 2):
-  - Ronda 3, Marbella 1, Marbella (San Pedro Alcántara) 1, Ibiza Town 1,
-    Ibiza Town (Dalt Vila) 1, Toledo 4, Salamanca 2, Santiago de
-    Compostela 3, Cádiz 2, Girona 3, Tossa de Mar 1, Santander 3,
-    Córdoba 3, Cuenca 2
-- Grand total across branch: 1,655 unique restaurants (558 batch_001 +
-  315 batch_002 + 782 france_leads_operator_provided.csv, tracked
+  [wave 2] 18, Portugal [wave 2] 10, Spain [wave 2] 30, Denmark
+  [wave 2] 10, Sweden [wave 2] 8, Norway [wave 2] 13, Finland
+  [wave 2] 8, Switzerland [wave 2] 25, Austria [wave 2] 7). Per-city
+  breakdown for the most recent merges:
+  - Nordics wave 2: Aalborg 5, Skagen 5, Uppsala 4, Visby 4,
+    Stavanger 4, Tromsø 5, Ålesund 4, Rovaniemi 4, Porvoo 4
+  - Switzerland+Austria wave 2: St. Moritz 4, Montreux 4, Gstaad 3,
+    Saanen (Gstaad) 1, Lugano 4, Hallstatt 4, Kitzbühel 3, Reith bei
+    Kitzbühel 1, St. Wolfgang 3, Strobl am Wolfgangsee 1, Villach 4
+- Grand total across branch: 1,726 unique restaurants (558 batch_001 +
+  386 batch_002 + 782 france_leads_operator_provided.csv, tracked
   separately per operator instruction — see "France" section below).
 - **All countries in the original scope now have at least a wave 1
   pass** (Vatican City confirmed to have none; everything else has
   data). Wave 2 (smaller towns) done so far for: UK, Germany, Italy,
-  Netherlands, Portugal, Spain. Continuing wave 2 across remaining
+  Netherlands, Portugal, Spain, Denmark, Sweden, Norway, Finland,
+  Switzerland, Austria. Belgium+Ireland wave 2 in progress (hit a
+  session-limit failure, retrying). Continuing wave 2 across remaining
   countries.
 
 ## Scope
