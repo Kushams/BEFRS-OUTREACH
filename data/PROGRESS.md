@@ -10,30 +10,28 @@
   Hungary 8, Greece 14, Croatia 10, Estonia 8, Latvia 8, Lithuania 10,
   Slovakia 7, Slovenia 8, Serbia 7, Bosnia and Herzegovina 5, France 84
   [13 corrections + 71 deep-search wave 6, see below]).
-- Batch 002: IN PROGRESS — 221 rows (Luxembourg 5, Iceland 5, Malta 8,
+- Batch 002: IN PROGRESS — 285 rows (Luxembourg 5, Iceland 5, Malta 8,
   Cyprus 19, Romania 19, Bulgaria 10, Albania 10, Montenegro 11,
   Kosovo 6, North Macedonia 9, Türkiye 9, Georgia 4, Armenia 2,
   Azerbaijan 2, Ukraine 10, Moldova 3, Andorra 2, Monaco 3, San
   Marino 1, Germany [wave 2] 39, United Kingdom [wave 2] 26,
-  Liechtenstein 7, Belarus 2, Russia 9). Per-city breakdown for the
-  most recent merges:
-  - UK wave 2 (smaller towns): Whitstable 2, Rye 1, Ludlow 1,
-    Harrogate 2, Stratford-upon-Avon 1, Chester 1, Whitby 1, St Ives 2,
-    Ambleside 2, Salisbury 1, Winchester 1, St Andrews 1, Inverness 1,
-    Pitlochry 1, Abergavenny 2, Conwy 2, Tenby 1, Derry/Londonderry 1,
-    Newcastle (Co. Down) 2
-  - Liechtenstein: Vaduz 3, Schaan 4
-  - Belarus: Minsk 2
-  - Russia: Moscow 6, Saint Petersburg 3
-  - Vatican City: 0 found — confirmed no independent restaurants exist
-    inside Vatican City itself (dining near St. Peter's is in Rome,
-    outside the country). Not pursuing further.
-- Grand total across branch: 1,561 unique restaurants (558 batch_001 +
-  221 batch_002 + 782 france_leads_operator_provided.csv, tracked
+  Liechtenstein 7, Belarus 2, Russia 9, Italy [wave 2] 36, Netherlands
+  [wave 2] 18, Portugal [wave 2] 10). Per-city breakdown for the most
+  recent merges:
+  - Italy wave 2 (smaller towns): Siena 3, San Gimignano 5, Monterosso
+    al Mare 1, Vernazza 2, Positano 3, Amalfi 2, Capri 2, Anacapri 2,
+    Taormina 2, Lecce 4, Alberobello 4, Como 2, Portofino 2, Orvieto 2
+  - Netherlands wave 2: Nijmegen 3, Breda 2, Den Bosch 3, Zwolle 4,
+    Middelburg 3, Volendam 3
+  - Portugal wave 2: Óbidos 2, Nazaré 2, Peniche 1, Aveiro 1,
+    Guimarães 1, Lagos 3
+- Grand total across branch: 1,625 unique restaurants (558 batch_001 +
+  285 batch_002 + 782 france_leads_operator_provided.csv, tracked
   separately per operator instruction — see "France" section below).
 - **All countries in the original scope now have at least a wave 1
   pass** (Vatican City confirmed to have none; everything else has
-  data). From here it's wave 2+ deeper coverage on every country.
+  data). Wave 2 (smaller towns) done so far for: UK, Germany, Italy,
+  Netherlands, Portugal. Continuing wave 2 across remaining countries.
 
 ## Scope
 - This branch (`claude/europe-restaurant-email-database-xq7t80`) is a
