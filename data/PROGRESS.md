@@ -10,18 +10,17 @@
   Hungary 8, Greece 14, Croatia 10, Estonia 8, Latvia 8, Lithuania 10,
   Slovakia 7, Slovenia 8, Serbia 7, Bosnia and Herzegovina 5, France 84
   [13 corrections + 71 deep-search wave 6, see below]).
-- Batch 002: IN PROGRESS — 138 rows (Luxembourg 5, Iceland 5, Malta 8,
+- Batch 002: IN PROGRESS — 177 rows (Luxembourg 5, Iceland 5, Malta 8,
   Cyprus 19, Romania 19, Bulgaria 10, Albania 10, Montenegro 11,
   Kosovo 6, North Macedonia 9, Türkiye 9, Georgia 4, Armenia 2,
   Azerbaijan 2, Ukraine 10, Moldova 3, Andorra 2, Monaco 3, San
-  Marino 1). Per-city breakdown for the most recent merge:
-  - Ukraine: Kyiv 4, Lviv 4, Odesa 2
-  - Moldova: Chișinău 3
-  - Andorra: Andorra la Vella 2
-  - Monaco: Monaco 3
-  - San Marino: City of San Marino 1
-- Grand total across branch: 1,478 unique restaurants (558 batch_001 +
-  138 batch_002 + 782 france_leads_operator_provided.csv, tracked
+  Marino 1, Germany [wave 2 smaller towns] 39). Per-city breakdown for
+  the most recent merge (Germany wave 2):
+  - Rothenburg ob der Tauber 2, Heidelberg 2, Freiburg im Breisgau 3,
+    Baden-Baden 3, Garmisch-Partenkirchen 4, Rostock/Warnemünde 3,
+    Lübeck 4, Trier 4, Bamberg 3, Weimar 4, Konstanz 3, Würzburg 4
+- Grand total across branch: 1,517 unique restaurants (558 batch_001 +
+  177 batch_002 + 782 france_leads_operator_provided.csv, tracked
   separately per operator instruction — see "France" section below).
 
 ## Scope
