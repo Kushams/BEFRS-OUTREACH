@@ -10,18 +10,30 @@
   Hungary 8, Greece 14, Croatia 10, Estonia 8, Latvia 8, Lithuania 10,
   Slovakia 7, Slovenia 8, Serbia 7, Bosnia and Herzegovina 5, France 84
   [13 corrections + 71 deep-search wave 6, see below]).
-- Batch 002: IN PROGRESS — 177 rows (Luxembourg 5, Iceland 5, Malta 8,
+- Batch 002: IN PROGRESS — 221 rows (Luxembourg 5, Iceland 5, Malta 8,
   Cyprus 19, Romania 19, Bulgaria 10, Albania 10, Montenegro 11,
   Kosovo 6, North Macedonia 9, Türkiye 9, Georgia 4, Armenia 2,
   Azerbaijan 2, Ukraine 10, Moldova 3, Andorra 2, Monaco 3, San
-  Marino 1, Germany [wave 2 smaller towns] 39). Per-city breakdown for
-  the most recent merge (Germany wave 2):
-  - Rothenburg ob der Tauber 2, Heidelberg 2, Freiburg im Breisgau 3,
-    Baden-Baden 3, Garmisch-Partenkirchen 4, Rostock/Warnemünde 3,
-    Lübeck 4, Trier 4, Bamberg 3, Weimar 4, Konstanz 3, Würzburg 4
-- Grand total across branch: 1,517 unique restaurants (558 batch_001 +
-  177 batch_002 + 782 france_leads_operator_provided.csv, tracked
+  Marino 1, Germany [wave 2] 39, United Kingdom [wave 2] 26,
+  Liechtenstein 7, Belarus 2, Russia 9). Per-city breakdown for the
+  most recent merges:
+  - UK wave 2 (smaller towns): Whitstable 2, Rye 1, Ludlow 1,
+    Harrogate 2, Stratford-upon-Avon 1, Chester 1, Whitby 1, St Ives 2,
+    Ambleside 2, Salisbury 1, Winchester 1, St Andrews 1, Inverness 1,
+    Pitlochry 1, Abergavenny 2, Conwy 2, Tenby 1, Derry/Londonderry 1,
+    Newcastle (Co. Down) 2
+  - Liechtenstein: Vaduz 3, Schaan 4
+  - Belarus: Minsk 2
+  - Russia: Moscow 6, Saint Petersburg 3
+  - Vatican City: 0 found — confirmed no independent restaurants exist
+    inside Vatican City itself (dining near St. Peter's is in Rome,
+    outside the country). Not pursuing further.
+- Grand total across branch: 1,561 unique restaurants (558 batch_001 +
+  221 batch_002 + 782 france_leads_operator_provided.csv, tracked
   separately per operator instruction — see "France" section below).
+- **All countries in the original scope now have at least a wave 1
+  pass** (Vatican City confirmed to have none; everything else has
+  data). From here it's wave 2+ deeper coverage on every country.
 
 ## Scope
 - This branch (`claude/europe-restaurant-email-database-xq7t80`) is a
