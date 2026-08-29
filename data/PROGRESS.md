@@ -25,19 +25,18 @@
   Lithuania [wave 2] 3, Bosnia and Herzegovina [wave 2] 3, Serbia
   [wave 2] 3, Slovakia [wave 2] 3, Slovenia [wave 2] 5, Greece
   [wave 1+2] 25, Croatia [wave 1+2] 20, France [wave 7] 29).
-- Batch 003: IN PROGRESS — 102 rows (Romania [wave 2] 9, Bulgaria
+- Batch 003: IN PROGRESS — 145 rows (Romania [wave 2] 9, Bulgaria
   [wave 2] 3, Türkiye [wave 2] 9, Georgia [wave 2] 4, Armenia
   [wave 2] 1, Italy [wave 3] 29, Malta [wave 2] 4, Cyprus [wave 2] 6,
-  Iceland [wave 2] 5, France [wave 8] 32). Per-city breakdown for the
-  most recent merge (France wave 8, new cities): Rennes 3,
-  Angoulême 2, Poitiers 1, Limoges 9, Chartres 2, Vannes 2, Quimper 2,
-  Épernay 2, Troyes 7, Arles 2. (One candidate — Restaurant IMA,
-  Rennes — was an exact duplicate of an existing operator-file row
-  and was dropped before merging.)
-- Grand total across branch: 1,964 unique restaurants (558 batch_001 +
-  522 batch_002 + 102 batch_003 + 782 france_leads_operator_provided.csv,
+  Iceland [wave 2] 5, France [wave 8] 32, United Kingdom [wave 3] 43).
+  Per-city breakdown for the most recent merge (UK wave 3, new towns):
+  Port Isaac 3, Rock 2, Padstow 2, Broadway 4, Lymington 4, Tunbridge
+  Wells 4, Shrewsbury 4, Durham 3, Lincoln 3, Oban 4, Portree 3,
+  Stonehaven 3, Porthmadog 3, Portmeirion 1.
+- Grand total across branch: 2,007 unique restaurants (558 batch_001 +
+  522 batch_002 + 145 batch_003 + 782 france_leads_operator_provided.csv,
   tracked separately per operator instruction — see "France" section
-  below).
+  below). Crossed 2,000.
 - **All countries in the original scope now have at least a wave 1
   pass** (Vatican City confirmed to have none; everything else has
   data). Wave 2 (smaller towns) done so far for: UK, Germany, Italy,
