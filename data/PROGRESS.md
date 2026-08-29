@@ -25,14 +25,17 @@
   Lithuania [wave 2] 3, Bosnia and Herzegovina [wave 2] 3, Serbia
   [wave 2] 3, Slovakia [wave 2] 3, Slovenia [wave 2] 5, Greece
   [wave 1+2] 25, Croatia [wave 1+2] 20, France [wave 7] 29).
-- Batch 003: STARTED (header only, 0 rows) — next new leads go here.
-- Per-city breakdown for the most recent merge (France wave 7, new
-  cities not yet covered): Saint-Malo 3, Deauville 8, Honfleur 3,
-  Carcassonne 3, Albi 2, Beaune 3, Val d'Isère 2, Courchevel 2,
-  La Baule 3. (Chamrousse yielded 0 verifiable emails — reported
-  honestly rather than forced; worth a follow-up pass later.)
-- Grand total across branch: 1,862 unique restaurants (558 batch_001 +
-  522 batch_002 + 0 batch_003 + 782 france_leads_operator_provided.csv,
+- Batch 003: IN PROGRESS — 26 rows (Romania [wave 2] 9, Bulgaria
+  [wave 2] 3, Türkiye [wave 2] 9, Georgia [wave 2] 4, Armenia
+  [wave 2] 1). Per-city breakdown for the most recent merge:
+  - Romania wave 2: Constanța 2, Iași 3, Sighișoara 2, Sinaia 2
+  - Bulgaria wave 2: Veliko Tarnovo 1, Bansko 2
+  - Türkiye wave 2: Göreme 2, Ürgüp 1, Fethiye 2, Alanya 2, Trabzon 1,
+    Yomra/Trabzon 1
+  - Georgia wave 2: Kutaisi 2, Sighnaghi 2
+  - Armenia wave 2: Gyumri 1
+- Grand total across branch: 1,888 unique restaurants (558 batch_001 +
+  522 batch_002 + 26 batch_003 + 782 france_leads_operator_provided.csv,
   tracked separately per operator instruction — see "France" section
   below).
 - **All countries in the original scope now have at least a wave 1
