@@ -25,15 +25,17 @@
   Lithuania [wave 2] 3, Bosnia and Herzegovina [wave 2] 3, Serbia
   [wave 2] 3, Slovakia [wave 2] 3, Slovenia [wave 2] 5, Greece
   [wave 1+2] 25, Croatia [wave 1+2] 20, France [wave 7] 29).
-- Batch 003: IN PROGRESS — 70 rows (Romania [wave 2] 9, Bulgaria
+- Batch 003: IN PROGRESS — 102 rows (Romania [wave 2] 9, Bulgaria
   [wave 2] 3, Türkiye [wave 2] 9, Georgia [wave 2] 4, Armenia
   [wave 2] 1, Italy [wave 3] 29, Malta [wave 2] 4, Cyprus [wave 2] 6,
-  Iceland [wave 2] 5). Per-city breakdown for the most recent merge
-  (small states wave 2):
-  - Mdina 2, Victoria (Gozo) 1, Marsaxlokk 1, Ayia Napa 2, Protaras 4,
-    Vík 2, Höfn 3
-- Grand total across branch: 1,932 unique restaurants (558 batch_001 +
-  522 batch_002 + 70 batch_003 + 782 france_leads_operator_provided.csv,
+  Iceland [wave 2] 5, France [wave 8] 32). Per-city breakdown for the
+  most recent merge (France wave 8, new cities): Rennes 3,
+  Angoulême 2, Poitiers 1, Limoges 9, Chartres 2, Vannes 2, Quimper 2,
+  Épernay 2, Troyes 7, Arles 2. (One candidate — Restaurant IMA,
+  Rennes — was an exact duplicate of an existing operator-file row
+  and was dropped before merging.)
+- Grand total across branch: 1,964 unique restaurants (558 batch_001 +
+  522 batch_002 + 102 batch_003 + 782 france_leads_operator_provided.csv,
   tracked separately per operator instruction — see "France" section
   below).
 - **All countries in the original scope now have at least a wave 1
