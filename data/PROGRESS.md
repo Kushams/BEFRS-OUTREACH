@@ -10,7 +10,7 @@
   Hungary 8, Greece 14, Croatia 10, Estonia 8, Latvia 8, Lithuania 10,
   Slovakia 7, Slovenia 8, Serbia 7, Bosnia and Herzegovina 5, France 84
   [13 corrections + 71 deep-search wave 6, see below]).
-- Batch 002: IN PROGRESS — 447 rows (Luxembourg 5, Iceland 5, Malta 8,
+- Batch 002: IN PROGRESS — 472 rows (Luxembourg 5, Iceland 5, Malta 8,
   Cyprus 19, Romania 19, Bulgaria 10, Albania 10, Montenegro 11,
   Kosovo 6, North Macedonia 9, Türkiye 9, Georgia 4, Armenia 2,
   Azerbaijan 2, Ukraine 10, Moldova 3, Andorra 2, Monaco 3, San
@@ -20,16 +20,18 @@
   [wave 2] 10, Sweden [wave 2] 8, Norway [wave 2] 13, Finland
   [wave 2] 8, Switzerland [wave 2] 25, Austria [wave 2] 7, Belgium
   [wave 2] 14, Ireland [wave 2] 13, Poland [wave 2] 18, Czechia
-  [wave 2] 7, Hungary [wave 2] 9). Per-city breakdown for the most
-  recent merge (Poland+Czechia+Hungary wave 2):
-  - Poznań 5, Zakopane 4, Toruń 4, Sopot 5, Karlovy Vary 4, Olomouc 3,
-    Eger 3, Pécs 3, Sopron 3
-- Grand total across branch: 1,787 unique restaurants (558 batch_001 +
-  447 batch_002 + 782 france_leads_operator_provided.csv, tracked
+  [wave 2] 7, Hungary [wave 2] 9, Estonia [wave 2] 4, Latvia [wave 2] 4,
+  Lithuania [wave 2] 3, Bosnia and Herzegovina [wave 2] 3, Serbia
+  [wave 2] 3, Slovakia [wave 2] 3, Slovenia [wave 2] 5). Per-city
+  breakdown for the most recent merge (Baltics+Balkans wave 2):
+  - Pärnu 4, Sigulda 4, Trakai 3, Banja Luka 3, Niš 3, Žilina 3,
+    Maribor 2, Portorož 3
+- Grand total across branch: 1,812 unique restaurants (558 batch_001 +
+  472 batch_002 + 782 france_leads_operator_provided.csv, tracked
   separately per operator instruction — see "France" section below).
-- Batch 002 is close to full (447/500) — still waiting on Greece/
-  Croatia wave 2 and Baltics/Balkans wave 2 to land; next merge will
-  likely close it out and start batch_003.
+- Batch 002 is very close to full (472/500) — still waiting on
+  Greece/Croatia wave 2; next merge will likely close it out and start
+  batch_003.
 - **All countries in the original scope now have at least a wave 1
   pass** (Vatican City confirmed to have none; everything else has
   data). Wave 2 (smaller towns) done so far for: UK, Germany, Italy,
