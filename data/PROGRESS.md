@@ -25,16 +25,17 @@
   Lithuania [wave 2] 3, Bosnia and Herzegovina [wave 2] 3, Serbia
   [wave 2] 3, Slovakia [wave 2] 3, Slovenia [wave 2] 5, Greece
   [wave 1+2] 25, Croatia [wave 1+2] 20, France [wave 7] 29).
-- Batch 003: IN PROGRESS — 172 rows (Romania [wave 2] 9, Bulgaria
+- Batch 003: IN PROGRESS — 200 rows (Romania [wave 2] 9, Bulgaria
   [wave 2] 3, Türkiye [wave 2] 9, Georgia [wave 2] 4, Armenia
   [wave 2] 1, Italy [wave 3] 29, Malta [wave 2] 4, Cyprus [wave 2] 6,
   Iceland [wave 2] 5, France [wave 8] 32, United Kingdom [wave 3] 43,
-  Spain [wave 3] 27). Per-city breakdown for the most recent merge
-  (Spain wave 3, new towns): Sitges 3, Tarifa 3, Formentera 3,
-  Ciutadella de Menorca 2, Mahón 1, Fornells (Menorca) 1, Logroño 3,
-  Oviedo 3, Puerto de la Cruz 4, Las Palmas de Gran Canaria 4.
-- Grand total across branch: 2,034 unique restaurants (558 batch_001 +
-  522 batch_002 + 172 batch_003 + 782 france_leads_operator_provided.csv,
+  Spain [wave 3] 27, Netherlands [wave 3] 17, Portugal [wave 3] 11).
+  Per-city breakdown for the most recent merge (Netherlands+Portugal
+  wave 3, new towns): Kampen 4, Deventer 3, Alkmaar 3, Gouda 3,
+  Texel 4, Tavira 3, Sesimbra 3, Setúbal 2, Ponta Delgada 2, Câmara de
+  Lobos 1.
+- Grand total across branch: 2,062 unique restaurants (558 batch_001 +
+  522 batch_002 + 200 batch_003 + 782 france_leads_operator_provided.csv,
   tracked separately per operator instruction — see "France" section
   below).
 - **All countries in the original scope now have at least a wave 1
