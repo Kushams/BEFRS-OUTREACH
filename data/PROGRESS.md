@@ -10,30 +10,31 @@
   Hungary 8, Greece 14, Croatia 10, Estonia 8, Latvia 8, Lithuania 10,
   Slovakia 7, Slovenia 8, Serbia 7, Bosnia and Herzegovina 5, France 84
   [13 corrections + 71 deep-search wave 6, see below]).
-- Batch 002: IN PROGRESS — 493 rows (Luxembourg 5, Iceland 5, Malta 8,
-  Cyprus 19, Romania 19, Bulgaria 10, Albania 10, Montenegro 11,
-  Kosovo 6, North Macedonia 9, Türkiye 9, Georgia 4, Armenia 2,
-  Azerbaijan 2, Ukraine 10, Moldova 3, Andorra 2, Monaco 3, San
-  Marino 1, Germany [wave 1+2] 77, United Kingdom [wave 1+2] 71,
-  Liechtenstein 7, Belarus 2, Russia 9, Italy [wave 2] 36, Netherlands
-  [wave 2] 18, Portugal [wave 2] 10, Spain [wave 2] 30, Denmark
-  [wave 2] 10, Sweden [wave 2] 8, Norway [wave 2] 13, Finland
+- Batch 002: COMPLETE (closed over the 500 target, same convention as
+  batch 001 — don't trim, just close and start fresh) — 522 rows
+  (Luxembourg 5, Iceland 5, Malta 8, Cyprus 19, Romania 19, Bulgaria 10,
+  Albania 10, Montenegro 11, Kosovo 6, North Macedonia 9, Türkiye 9,
+  Georgia 4, Armenia 2, Azerbaijan 2, Ukraine 10, Moldova 3, Andorra 2,
+  Monaco 3, San Marino 1, Germany [wave 1+2] 77, United Kingdom
+  [wave 1+2] 71, Liechtenstein 7, Belarus 2, Russia 9, Italy [wave 2] 36,
+  Netherlands [wave 2] 18, Portugal [wave 2] 10, Spain [wave 2] 30,
+  Denmark [wave 2] 10, Sweden [wave 2] 8, Norway [wave 2] 13, Finland
   [wave 2] 8, Switzerland [wave 2] 25, Austria [wave 2] 7, Belgium
   [wave 2] 14, Ireland [wave 2] 13, Poland [wave 2] 18, Czechia
   [wave 2] 7, Hungary [wave 2] 9, Estonia [wave 2] 4, Latvia [wave 2] 4,
   Lithuania [wave 2] 3, Bosnia and Herzegovina [wave 2] 3, Serbia
   [wave 2] 3, Slovakia [wave 2] 3, Slovenia [wave 2] 5, Greece
-  [wave 1+2] 25, Croatia [wave 1+2] 20). Per-city breakdown for the
-  most recent merge (Greece+Croatia wave 2):
-  - Nafplio 2, Delphi 2, Corfu Town 2, Naoussa 2, Parikia 1, Naxos
-    Town 1, Naxos 1, Hvar 1, Brusje (Hvar Island) 1, Zadar 3, Pula 2,
-    Slunj (Rastoke) 1, Rakovica 1, Korenica 1
-- Grand total across branch: 1,833 unique restaurants (558 batch_001 +
-  493 batch_002 + 782 france_leads_operator_provided.csv, tracked
-  separately per operator instruction — see "France" section below).
-- Batch 002 is now at 493/500 — nearly full. The next completed wave
-  will push it over 500; per operator instruction, don't trim it —
-  close it as-is and start batch_003 fresh.
+  [wave 1+2] 25, Croatia [wave 1+2] 20, France [wave 7] 29).
+- Batch 003: STARTED (header only, 0 rows) — next new leads go here.
+- Per-city breakdown for the most recent merge (France wave 7, new
+  cities not yet covered): Saint-Malo 3, Deauville 8, Honfleur 3,
+  Carcassonne 3, Albi 2, Beaune 3, Val d'Isère 2, Courchevel 2,
+  La Baule 3. (Chamrousse yielded 0 verifiable emails — reported
+  honestly rather than forced; worth a follow-up pass later.)
+- Grand total across branch: 1,862 unique restaurants (558 batch_001 +
+  522 batch_002 + 0 batch_003 + 782 france_leads_operator_provided.csv,
+  tracked separately per operator instruction — see "France" section
+  below).
 - **All countries in the original scope now have at least a wave 1
   pass** (Vatican City confirmed to have none; everything else has
   data). Wave 2 (smaller towns) done so far for: UK, Germany, Italy,
