@@ -25,18 +25,19 @@
   Lithuania [wave 2] 3, Bosnia and Herzegovina [wave 2] 3, Serbia
   [wave 2] 3, Slovakia [wave 2] 3, Slovenia [wave 2] 5, Greece
   [wave 1+2] 25, Croatia [wave 1+2] 20, France [wave 7] 29).
-- Batch 003: IN PROGRESS — 227 rows (Romania [wave 2] 9, Bulgaria
+- Batch 003: IN PROGRESS — 252 rows (Romania [wave 2] 9, Bulgaria
   [wave 2] 3, Türkiye [wave 2] 9, Georgia [wave 2] 4, Armenia
   [wave 2] 1, Italy [wave 3] 29, Malta [wave 2] 4, Cyprus [wave 2] 6,
   Iceland [wave 2] 5, France [wave 8] 32, United Kingdom [wave 3] 43,
   Spain [wave 3] 27, Netherlands [wave 3] 17, Portugal [wave 3] 11,
   Ukraine [wave 2] 9, Moldova [wave 2] 2, Albania [wave 2] 4, Kosovo
-  [wave 2] 7, Montenegro [wave 2] 2, North Macedonia [wave 2] 3).
-  Per-city breakdown for the most recent merge (Balkans wave 2):
-  Berat 2, Gjirokastër 1, Shkodër 1, Herceg Novi 1, Žabljak 1,
-  Gjakova 4, Peja 3, Bitola 1, Struga 2.
-- Grand total across branch: 2,089 unique restaurants (558 batch_001 +
-  522 batch_002 + 227 batch_003 + 782 france_leads_operator_provided.csv,
+  [wave 2] 7, Montenegro [wave 2] 2, North Macedonia [wave 2] 3,
+  Denmark [wave 3] 7, Sweden [wave 3] 7, Norway [wave 3] 4, Finland
+  [wave 3] 7). Per-city breakdown for the most recent merge (Nordics
+  wave 3): Roskilde 4, Helsingør 3, Lund 4, Kiruna 3, Lillehammer 2,
+  Flåm 2, Kuopio 4, Oulu 3.
+- Grand total across branch: 2,114 unique restaurants (558 batch_001 +
+  522 batch_002 + 252 batch_003 + 782 france_leads_operator_provided.csv,
   tracked separately per operator instruction — see "France" section
   below).
 - **All countries in the original scope now have at least a wave 1
