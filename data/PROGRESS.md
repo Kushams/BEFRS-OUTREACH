@@ -35,14 +35,14 @@
   Denmark [wave 3] 7, Sweden [wave 3] 7, Norway [wave 3] 4, Finland
   [wave 3] 7, Germany [wave 3] 65, Poland [wave 3] 16, Czechia
   [wave 3] 15, Hungary [wave 3] 11, Italy [wave 4] 43, France
-  [wave 9] 33). Per-city breakdown for the most recent merge
-  (France wave 9): Amiens 4, Besançon 1, Caen 2, Clermont-Ferrand 2,
-  Grenoble 2, Le Havre 1, Limoges 1, Metz 2, Mulhouse 2, Nancy 2,
-  Orléans 2, Perpignan 3, Poitiers 1, Reims 2, Rouen 5,
-  Saint-Étienne 1 (21 of the agent's 54 finds were duplicates of
-  already-covered France wave 8 restaurants and were dropped).
-- Grand total across branch: 2,304 unique restaurants (558 batch_001 +
-  522 batch_002 + 442 batch_003 + 782 france_leads_operator_provided.csv,
+  [wave 9] 33, Spain [wave 4] 30). Per-city breakdown for the most
+  recent merge (Spain wave 4): Cáceres 3, A Coruña 2, Albacete 2,
+  Badajoz 2, Burgos 2, Gijón 2, León 2, Lugo 2, Ourense 2,
+  Pontevedra 2, Toledo 2, Vigo 2, Vitoria-Gasteiz 2, Huelva 1,
+  Salamanca 1, Santander 1 (4 of the agent's 34 finds duplicated
+  already-covered Spain wave 3 restaurants and were dropped).
+- Grand total across branch: 2,334 unique restaurants (558 batch_001 +
+  522 batch_002 + 472 batch_003 + 782 france_leads_operator_provided.csv,
   tracked separately per operator instruction — see "France" section
   below).
 - **All countries in the original scope now have at least a wave 1
