@@ -25,7 +25,7 @@
   Lithuania [wave 2] 3, Bosnia and Herzegovina [wave 2] 3, Serbia
   [wave 2] 3, Slovakia [wave 2] 3, Slovenia [wave 2] 5, Greece
   [wave 1+2] 25, Croatia [wave 1+2] 20, France [wave 7] 29).
-- Batch 003: IN PROGRESS — 409 rows (Romania [wave 2] 9, Bulgaria
+- Batch 003: IN PROGRESS — 442 rows (Romania [wave 2] 9, Bulgaria
   [wave 2] 3, Türkiye [wave 2] 9, Georgia [wave 2] 4, Armenia
   [wave 2] 1, Italy [wave 3] 29, Malta [wave 2] 4, Cyprus [wave 2] 6,
   Iceland [wave 2] 5, France [wave 8] 32, United Kingdom [wave 3] 43,
@@ -34,18 +34,15 @@
   [wave 2] 7, Montenegro [wave 2] 2, North Macedonia [wave 2] 3,
   Denmark [wave 3] 7, Sweden [wave 3] 7, Norway [wave 3] 4, Finland
   [wave 3] 7, Germany [wave 3] 65, Poland [wave 3] 16, Czechia
-  [wave 3] 15, Hungary [wave 3] 11, Italy [wave 4] 43). Per-city
-  breakdown for the two most recent merges: Poland/Czechia/Hungary
-  wave 3 — Bydgoszcz 3, Białystok 4, Rzeszów 4, Toruń 3, Kielce 3,
-  Olsztyn 3, Opole 3, Liberec 3, Olomouc 1, Hradec Králové 3,
-  Pardubice 3, Zlín 3, České Budějovice 2, Győr 2, Nyíregyháza 2,
-  Kecskemét 2, Székesfehérvár 3, Szombathely 2; Italy wave 4 —
-  Bergamo 4, Brescia 3, Padova 2, Parma 3, Modena 2, Trieste 3,
-  Salerno 2, Pescara 2, Cagliari 1, Sassari 2, Reggio Calabria 3,
-  Foggia 1, Ravenna 2, Ferrara 2, Rimini 2, Lucca 2, Siena 1, Como 3,
-  Vicenza 3, Trento 2.
-- Grand total across branch: 2,271 unique restaurants (558 batch_001 +
-  522 batch_002 + 409 batch_003 + 782 france_leads_operator_provided.csv,
+  [wave 3] 15, Hungary [wave 3] 11, Italy [wave 4] 43, France
+  [wave 9] 33). Per-city breakdown for the most recent merge
+  (France wave 9): Amiens 4, Besançon 1, Caen 2, Clermont-Ferrand 2,
+  Grenoble 2, Le Havre 1, Limoges 1, Metz 2, Mulhouse 2, Nancy 2,
+  Orléans 2, Perpignan 3, Poitiers 1, Reims 2, Rouen 5,
+  Saint-Étienne 1 (21 of the agent's 54 finds were duplicates of
+  already-covered France wave 8 restaurants and were dropped).
+- Grand total across branch: 2,304 unique restaurants (558 batch_001 +
+  522 batch_002 + 442 batch_003 + 782 france_leads_operator_provided.csv,
   tracked separately per operator instruction — see "France" section
   below).
 - **All countries in the original scope now have at least a wave 1
