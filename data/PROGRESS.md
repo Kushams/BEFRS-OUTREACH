@@ -44,9 +44,14 @@
   Tilburg 2, Breda 1, Maastricht 1, Malonne (Namur) 1, Namur 1,
   Nijmegen 1 (7 of the agent's 40 finds duplicated already-covered
   restaurants and were dropped).
-- Batch 004: IN PROGRESS — 0 rows (header only, just opened).
-- Grand total across branch: 2,367 unique restaurants (558 batch_001 +
-  522 batch_002 + 505 batch_003 + 0 batch_004 +
+- Batch 004: IN PROGRESS — 34 rows (United Kingdom [wave 4] 34). Per-city
+  breakdown: Nottingham 4, Sheffield 4, Newcastle upon Tyne 3,
+  Cambridge 3, Norwich 3, Oxford 3, Southampton 3, York 3, Bath 3,
+  Leicester 2, Brighton 1, Portsmouth 1, Portsmouth (Southsea) 1
+  (4 of the agent's 38 finds duplicated already-covered restaurants
+  and were dropped).
+- Grand total across branch: 2,401 unique restaurants (558 batch_001 +
+  522 batch_002 + 505 batch_003 + 34 batch_004 +
   782 france_leads_operator_provided.csv, tracked separately per
   operator instruction — see "France" section below).
 - **All countries in the original scope now have at least a wave 1
