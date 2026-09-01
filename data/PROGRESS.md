@@ -35,16 +35,20 @@
   Denmark [wave 3] 7, Sweden [wave 3] 7, Norway [wave 3] 4, Finland
   [wave 3] 7, Germany [wave 3] 65, Poland [wave 3] 16, Czechia
   [wave 3] 15, Hungary [wave 3] 11, Italy [wave 4] 43, France
-  [wave 9] 33, Spain [wave 4] 30). Per-city breakdown for the most
-  recent merge (Spain wave 4): Cáceres 3, A Coruña 2, Albacete 2,
-  Badajoz 2, Burgos 2, Gijón 2, León 2, Lugo 2, Ourense 2,
-  Pontevedra 2, Toledo 2, Vigo 2, Vitoria-Gasteiz 2, Huelva 1,
-  Salamanca 1, Santander 1 (4 of the agent's 34 finds duplicated
-  already-covered Spain wave 3 restaurants and were dropped).
-- Grand total across branch: 2,334 unique restaurants (558 batch_001 +
-  522 batch_002 + 472 batch_003 + 782 france_leads_operator_provided.csv,
-  tracked separately per operator instruction — see "France" section
-  below).
+  [wave 9] 33, Spain [wave 4] 30, Netherlands [wave 4] 12, Belgium
+  [wave 3] 21). Batch 003 is now CLOSED (closed over the 500 target,
+  same convention as batch 001/002 — don't trim, just close and start
+  fresh) — 505/500 rows. Per-city breakdown for the final merge
+  (Netherlands/Belgium wave 4): Mechelen 4, Groningen 3, Arnhem 3,
+  Hasselt 3, Kortrijk 3, Leuven 3, Mons 3, Enschede 2, Haarlem 2,
+  Tilburg 2, Breda 1, Maastricht 1, Malonne (Namur) 1, Namur 1,
+  Nijmegen 1 (7 of the agent's 40 finds duplicated already-covered
+  restaurants and were dropped).
+- Batch 004: IN PROGRESS — 0 rows (header only, just opened).
+- Grand total across branch: 2,367 unique restaurants (558 batch_001 +
+  522 batch_002 + 505 batch_003 + 0 batch_004 +
+  782 france_leads_operator_provided.csv, tracked separately per
+  operator instruction — see "France" section below).
 - **All countries in the original scope now have at least a wave 1
   pass** (Vatican City confirmed to have none; everything else has
   data). Wave 2 (smaller towns) done so far for: UK, Germany, Italy,
