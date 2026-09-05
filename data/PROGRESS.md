@@ -44,19 +44,17 @@
   Tilburg 2, Breda 1, Maastricht 1, Malonne (Namur) 1, Namur 1,
   Nijmegen 1 (7 of the agent's 40 finds duplicated already-covered
   restaurants and were dropped).
-- Batch 004: IN PROGRESS — 158 rows (United Kingdom [wave 4] 34,
+- Batch 004: IN PROGRESS — 183 rows (United Kingdom [wave 4] 34,
   Austria [wave 3] 22, Switzerland [wave 3] 20, Greece [wave 3] 10,
   Croatia [wave 3] 8, Portugal [wave 4] 39, Romania [wave 3] 15,
-  Bulgaria [wave 3] 10). Per-city breakdown for the most recent
-  merge (Romania/Bulgaria wave 3): Stara Zagora 4, Brasov 3,
-  Craiova 3, Oradea 3, Ruse 3, Constanta 2, Pleven 2, Sibiu 2,
-  Targu Mures 2, Veliko Tarnovo 1 (4 of the agent's 30 finds were
-  duplicates and dropped; one pair of same-operator sibling
-  restaurants sharing one contact email — Tempo Restaurant and Laci
-  Csarda in Târgu Mureș — was collapsed to a single row to avoid
-  double-counting one inbox).
-- Grand total across branch: 2,525 unique restaurants (558 batch_001 +
-  522 batch_002 + 505 batch_003 + 158 batch_004 +
+  Bulgaria [wave 3] 10, Ireland [wave 3] 12, United Kingdom
+  [Wales wave] 13). Per-city breakdown for the most recent merge
+  (Ireland/Wales wave): Limerick 3, Kilkenny 3, Sligo 3,
+  Aberystwyth 3, Llandudno 3, Drogheda 2, Bangor 2, Newport 2,
+  Wrexham 2, Killarney 1, Waterford 1 (2 of the agent's 27 finds
+  were duplicates and dropped).
+- Grand total across branch: 2,550 unique restaurants (558 batch_001 +
+  522 batch_002 + 505 batch_003 + 183 batch_004 +
   782 france_leads_operator_provided.csv, tracked separately per
   operator instruction — see "France" section below).
 - **All countries in the original scope now have at least a wave 1
