@@ -54,13 +54,17 @@
   Estonia [wave 3] 7, Latvia [wave 3] 8, Lithuania [wave 3] 6,
   Malta [wave 3] 5, Cyprus [wave 3] 7, Italy [wave 5] 48, Germany
   [wave 4] 66, United Kingdom [wave 5] 29, Spain [wave 5] 31,
-  Netherlands [wave 5] 19, Belgium [wave 4] 16). Per-city breakdown
-  for the most recent merge (Netherlands/Belgium wave 5):
-  Apeldoorn 4, Aalst 3, Alkmaar 3, Amersfoort 3, Eindhoven 3,
-  Genk 3, Leiden 3, Roeselare 3, Sint-Niklaas 3, Zwolle 3, Delft 2,
-  Oostende 2 (4 duplicates dropped).
-- Grand total across branch: 2,856 unique restaurants (558 batch_001 +
-  522 batch_002 + 505 batch_003 + 489 batch_004 +
+  Netherlands [wave 5] 19, Belgium [wave 4] 16, Poland [wave 4] 23,
+  Czechia [wave 4] 9, Hungary [wave 4] 15). Batch 004 is now CLOSED
+  (closed over the 500 target, same convention as prior batches —
+  don't trim, just close and start fresh) — 536/500 rows. Per-city
+  breakdown for the final merge (Poland/Czechia/Hungary wave 4):
+  Gdańsk 6, Lublin 5, Poznań 5, Miskolc 4, Plzeň 4, Szczecin 4,
+  Wrocław 4, Ústí nad Labem 4, Łódź 4, Debrecen 3, Pécs 3,
+  Karlovy Vary 1 (7 duplicates dropped).
+- Batch 005: IN PROGRESS — 0 rows (header only, just opened).
+- Grand total across branch: 2,903 unique restaurants (558 batch_001 +
+  522 batch_002 + 505 batch_003 + 536 batch_004 + 0 batch_005 +
   782 france_leads_operator_provided.csv, tracked separately per
   operator instruction — see "France" section below).
 - **All countries in the original scope now have at least a wave 1
