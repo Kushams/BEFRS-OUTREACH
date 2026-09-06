@@ -53,16 +53,13 @@
   Herzegovina [wave 3] 2, Slovakia [wave 3] 7, Slovenia [wave 3] 9,
   Estonia [wave 3] 7, Latvia [wave 3] 8, Lithuania [wave 3] 6,
   Malta [wave 3] 5, Cyprus [wave 3] 7, Italy [wave 5] 48, Germany
-  [wave 4] 66). Per-city breakdown for the two most recent merges:
-  Italy wave 5 — Udine 6, Mantova 5, Perugia 4, Pisa 4, Taranto 4,
-  Cremona 3, Matera 3, Pordenone 3, Terni 3, Ancona 2, Latina 2,
-  Lecce 2, Livorno 2, Novara 2, Piacenza 2, Cosenza 1 (2 duplicates
-  dropped); Germany wave 4 — Bayreuth 6, Braunschweig 6,
-  Chemnitz 6, Karlsruhe 6, Bonn 4, Freiburg 4, Heidelberg 4,
-  Koblenz 4, Augsburg 4, Magdeburg 5, Mannheim 5, Osnabrück 5,
-  Rostock 3, Bamberg 2, Würzburg 1, Trier 1 (11 duplicates dropped).
-- Grand total across branch: 2,761 unique restaurants (558 batch_001 +
-  522 batch_002 + 505 batch_003 + 394 batch_004 +
+  [wave 4] 66, United Kingdom [wave 5] 29). Per-city breakdown for
+  the most recent merge (UK wave 5): Bournemouth 3, Milton Keynes 3,
+  St Andrews 3, Ayr 2, Carlisle 2, Chester 2, Exeter 2, Inverness 2,
+  Ipswich 2, Lancaster 2, Perth 2, Reading 2, Stirling 2 (1
+  duplicate dropped).
+- Grand total across branch: 2,790 unique restaurants (558 batch_001 +
+  522 batch_002 + 505 batch_003 + 423 batch_004 +
   782 france_leads_operator_provided.csv, tracked separately per
   operator instruction — see "France" section below).
 - **All countries in the original scope now have at least a wave 1
