@@ -53,13 +53,14 @@
   Herzegovina [wave 3] 2, Slovakia [wave 3] 7, Slovenia [wave 3] 9,
   Estonia [wave 3] 7, Latvia [wave 3] 8, Lithuania [wave 3] 6,
   Malta [wave 3] 5, Cyprus [wave 3] 7, Italy [wave 5] 48, Germany
-  [wave 4] 66, United Kingdom [wave 5] 29, Spain [wave 5] 31). Per-
-  city breakdown for the most recent merge (Spain wave 5): Málaga 7,
-  Zaragoza 6, Córdoba 4, Granada 3, Alicante 2, Murcia 2, Santa Cruz
-  de Tenerife 2, Valladolid 2, Cádiz 1, Las Palmas de Gran Canaria 1,
-  Palma de Mallorca 1 (5 duplicates dropped).
-- Grand total across branch: 2,821 unique restaurants (558 batch_001 +
-  522 batch_002 + 505 batch_003 + 454 batch_004 +
+  [wave 4] 66, United Kingdom [wave 5] 29, Spain [wave 5] 31,
+  Netherlands [wave 5] 19, Belgium [wave 4] 16). Per-city breakdown
+  for the most recent merge (Netherlands/Belgium wave 5):
+  Apeldoorn 4, Aalst 3, Alkmaar 3, Amersfoort 3, Eindhoven 3,
+  Genk 3, Leiden 3, Roeselare 3, Sint-Niklaas 3, Zwolle 3, Delft 2,
+  Oostende 2 (4 duplicates dropped).
+- Grand total across branch: 2,856 unique restaurants (558 batch_001 +
+  522 batch_002 + 505 batch_003 + 489 batch_004 +
   782 france_leads_operator_provided.csv, tracked separately per
   operator instruction — see "France" section below).
 - **All countries in the original scope now have at least a wave 1
