@@ -44,18 +44,19 @@
   Tilburg 2, Breda 1, Maastricht 1, Malonne (Namur) 1, Namur 1,
   Nijmegen 1 (7 of the agent's 40 finds duplicated already-covered
   restaurants and were dropped).
-- Batch 004: IN PROGRESS — 224 rows (United Kingdom [wave 4] 34,
+- Batch 004: IN PROGRESS — 247 rows (United Kingdom [wave 4] 34,
   Austria [wave 3] 22, Switzerland [wave 3] 20, Greece [wave 3] 10,
   Croatia [wave 3] 8, Portugal [wave 4] 39, Romania [wave 3] 15,
   Bulgaria [wave 3] 10, Ireland [wave 3] 12, United Kingdom
   [Wales wave] 13, Denmark [wave 4] 13, Sweden [wave 4] 13, Norway
-  [wave 4] 6, Finland [wave 4] 9). Per-city breakdown for the most
-  recent merge (Nordics wave 4): Kolding 4, Randers 4, Örebro 4,
-  Esbjerg 3, Helsingborg 3, Jyväskylä 3, Kristiansand 3, Lahti 3,
-  Linköping 3, Uppsala 3, Vaasa 3, Tromsø 2, Vejle 2, Stavanger 1
-  (3 of the agent's 44 finds were duplicates and dropped).
-- Grand total across branch: 2,591 unique restaurants (558 batch_001 +
-  522 batch_002 + 505 batch_003 + 224 batch_004 +
+  [wave 4] 6, Finland [wave 4] 9, Serbia [wave 3] 5, Bosnia and
+  Herzegovina [wave 3] 2, Slovakia [wave 3] 7, Slovenia [wave 3] 9).
+  Per-city breakdown for the most recent merge (Serbia/Bosnia/
+  Slovakia/Slovenia wave 3): Celje 3, Koper 3, Kragujevac 3, Kranj 3,
+  Nitra 3, Trnava 3, Subotica 2, Banja Luka 1, Tuzla 1, Žilina 1
+  (5 of the agent's 28 finds were duplicates and dropped).
+- Grand total across branch: 2,614 unique restaurants (558 batch_001 +
+  522 batch_002 + 505 batch_003 + 247 batch_004 +
   782 france_leads_operator_provided.csv, tracked separately per
   operator instruction — see "France" section below).
 - **All countries in the original scope now have at least a wave 1
